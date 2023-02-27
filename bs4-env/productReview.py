@@ -30,21 +30,15 @@ skipped = 0
 total_pages = 0
 with open('productReviews_soup.csv', 'w', newline='', encoding='utf-8') as csv_file:
     csv_writer = csv.writer(csv_file)
-    # csv_writer.writerow(['Product_ID', 'Product_Name',
-    #                    'Reviewer', 'Review_Title', 'Review'])
+    csv_writer.writerow(['Product_ID', 'Product_Name',
+                         'Reviewer', 'Review_Title', 'Review'])
 
     # Loop through the URLs and scrape the reviews
     crawled = 0
     start_time = time.time()
     for productID in productIDs:
         page_number = 1
-        if crawled < 226:
-            crawled += 1
-            continue
         while True:
-            if crawled == 226 and page_number < 4:
-                page_number+=1
-                continue
             print("Page No.: " + str(page_number))
             print("Products Crawled: " + str(crawled))
             print("Total Pages Crawled: " + str(total_pages))
@@ -122,7 +116,7 @@ with open('productReviews_soup.csv', 'w', newline='', encoding='utf-8') as csv_f
 
             # Increase the page number for the next request
             page_number += 1
-            total_pages+=1
+            total_pages += 1
         crawled += 1
 
     end_time = time.time()
