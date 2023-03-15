@@ -27,19 +27,24 @@ with open('productlist.csv', 'r') as csv_file:
     productIDs = [row['product_ID'] for row in reader]
     names = [row['product_name'] for row in reader]
 
+with open('productReviews_soup.csv', 'r') as csv_file:
+    reader = csv.DictReader(csv_file)
+    existingReviews = [row['Review'] for row in reader]
+
 
 skipped = 0
 total_pages = 0
 total_reviews = 0
-with open('productReviews_soup.csv', 'w', newline='', encoding='utf-8') as csv_file:
+with open('productReviews_soup.csv', 'a', newline='', encoding='utf-8') as csv_file:
     csv_writer = csv.writer(csv_file)
-    csv_writer.writerow(['Product_ID', 'Product_Name',
-                         'Reviewer', 'Review_Title', 'Review', 'Rating_Stars'])
+    # csv_writer.writerow(['Product_ID', 'Product_Name',
+    #                    'Reviewer', 'Review_Title', 'Review', 'Rating_Stars'])
 
     # Loop through the URLs and scrape the reviews
     crawled = 0
     start_time = time.time()
     for productID in productIDs:
+        crawledBefore = False
         page_number = 1
         while True:
             print("Page No.: " + str(page_number))
@@ -56,7 +61,7 @@ with open('productReviews_soup.csv', 'w', newline='', encoding='utf-8') as csv_f
                 'widget_version': '2023-02-13_11-23-53',
             }
 
-            time.sleep(random.randint(1, 2))
+            time.sleep(1)
 
             response = requests.post(URL, headers=headers, data=data)
             # Check if the page exists
@@ -106,6 +111,11 @@ with open('productReviews_soup.csv', 'w', newline='', encoding='utf-8') as csv_f
                     break
 
                 review = reviews[i].string
+                if review in existingReviews:
+                    print("Review for " + productName +
+                          " has been crawled previously")
+                    crawledBefore = True
+                    break
                 reviewTitle = reviewTitles[i].string
 
                 # Skip if review or reviewTitle is 'NoneType'
@@ -129,10 +139,12 @@ with open('productReviews_soup.csv', 'w', newline='', encoding='utf-8') as csv_f
                 csv_writer.writerow(
                     [productID, productName, reviewer, reviewTitle, review, stars])
                 total_reviews += 1
-
+            if crawledBefore:
+                break
             # Increase the page number for the next request
             page_number += 1
             total_pages += 1
+
         crawled += 1
 
 end_time = time.time()
