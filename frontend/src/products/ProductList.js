@@ -116,7 +116,7 @@ function ProductList() {
               to="/products"
               replace
             >
-              All Prodcuts
+              All Products
             </Link>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
