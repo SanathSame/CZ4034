@@ -1,5 +1,5 @@
 import Image from "./hermes.jpg";
-import { Link } from "react-router-dom";
+import {useHistory, Link} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Product(props) {
@@ -23,6 +23,13 @@ function Product(props) {
       </>
     );
   }
+  const history = useHistory();
+
+
+  function handleClick() 
+  {
+    history.push('/products/review');
+  }
 
   return (
     <div className="col">
@@ -38,12 +45,12 @@ function Product(props) {
         </Link>
         <div className="card-body">
           <h5 className="card-title text-center text-dark text-truncate">
-            Nillkin iPhone X cover
+          Hermès Plein Air, Complexion balm, 40 Chanvre
           </h5>
           <p className="card-text text-center text-muted mb-0">{offPrice}</p>
           <div className="d-grid d-block">
-            <button className="btn btn-outline-dark mt-3">
-              <FontAwesomeIcon icon={["fas", "cart-plus"]} /> Add to cart
+            <button className="btn btn-outline-dark mt-3" onClick={handleClick}>
+              <FontAwesomeIcon icon={["fas", "cart-plus"]} /> View reviews
             </button>
           </div>
         </div>
