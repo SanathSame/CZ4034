@@ -50,7 +50,7 @@ function Product(props) {
           <p className="card-text text-center text-muted mb-0">{offPrice}</p>
           <div className="d-grid d-block">
             <button className="btn btn-outline-dark mt-3" onClick={handleClick}>
-              <FontAwesomeIcon icon={["fas", "cart-plus"]} /> View reviews
+            <FontAwesomeIcon icon="fa-sharp fa-solid fa-star-sharp-half-stroke" /> View reviews
             </button>
           </div>
         </div>

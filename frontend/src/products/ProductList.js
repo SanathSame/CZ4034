@@ -189,9 +189,9 @@ function ProductList() {
                   defaultValue=""
                 >
                   <option value="">All Models</option>
-                  <option value="1">iPhone X</option>
-                  <option value="2">iPhone Xs</option>
-                  <option value="3">iPhone 11</option>
+                  <option value="1">Burn</option>
+                  <option value="2">Barn</option>
+                  <option value="3">Brad</option>
                 </select>
               </div>
               <div className="col-lg-9 col-xl-5 offset-xl-4 d-flex flex-row">
