@@ -3,6 +3,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
 
 # Load data
 data = pd.read_csv('balanced_data.csv')
@@ -26,6 +27,10 @@ lr_predictions = lr_model.predict(X_test_vectorized)
 # Write the logistic regression predictions to Column D of the test data
 data.loc[X_test.index, 'Logistic Regression Predictions'] = lr_predictions
 
+# Calculate and display the accuracy of the logistic regression model
+lr_accuracy = accuracy_score(y_test, lr_predictions)
+print(f'Logistic Regression Accuracy: {lr_accuracy:.2f}')
+
 # Train the random forest model
 rf_model = RandomForestClassifier()
 rf_model.fit(X_train_vectorized, y_train)
@@ -35,6 +40,10 @@ rf_predictions = rf_model.predict(X_test_vectorized)
 
 # Write the random forest predictions to Column E of the test data
 data.loc[X_test.index, 'Random Forest Predictions'] = rf_predictions
+
+# Calculate and display the accuracy of the random forest model
+rf_accuracy = accuracy_score(y_test, rf_predictions)
+print(f'Random Forest Accuracy: {rf_accuracy:.2f}')
 
 # Save the updated data to a new file
 data.to_csv('balanced_data_with_predictions.csv', index=False)

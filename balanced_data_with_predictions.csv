@@ -28,7 +28,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 26,skin dry sun damaged cream amazing job creating barrier locks nutrients applied serum also protects environmental damage moisturizers wake morning skin feel tight cream using tandem sioris bring light serum used together make skin feel nourished protected,1,,
 27,received sample loved way made fine highlighted hair feel smells amazing expensive justify spending much silicone hair oil though,1,,
 28,really nice sensitive skin adequate oily skin ive tried propolis benton moisturizing gel suits better,0,,
-29,ordered serum neogen essence acwell toner skin looks flawless serum little sticky hydrating time im second bottle however wish bottle bigger price still love apart routine,1,1.0,1.0
+29,ordered serum neogen essence acwell toner skin looks flawless serum little sticky hydrating time im second bottle however wish bottle bigger price still love apart routine,1,1.0,0.0
 30,luv toner excellent compliment 55 essence part 5 step regime face,1,1.0,1.0
 31,really liked patches theyre great night terrible oh moment also like wear mask stay really well,1,,
 32,already loved wineflavored one scent bit invasive one subtle efficient also gives extra fresh scent feeling allfav dont plan change anymore,1,1.0,1.0
@@ -50,7 +50,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 48,good think iv ordered wrong colour looks slightly darker still usable,0,,
 49,struggle hyperpigmentation raving reviews thought id give try think worked didnt like smell also yellowed fast even putting fridge,0,0.0,0.0
 50,moisturizing absolutely love product,1,,
-51,first obsessed smell love texture feels silky skin add water makes little foam noticed big difference weeks using skin cleared havent blackheads since also great removing makeup,1,1.0,0.0
+51,first obsessed smell love texture feels silky skin add water makes little foam noticed big difference weeks using skin cleared havent blackheads since also great removing makeup,1,1.0,1.0
 52,hydrating leaves skin feeling elastic,1,,
 53,think works whiteheads red pimples severe forms acne able get rid whiteheads keep protected dirt picking,0,,
 54,ive always issues skin getting super oily throughout day annoyingly lead acne face however found first washes nice residue cleanser skin felt clean overly clean couple weeks later ive noticed acne reducing cleanser seems dry little little definitely repurchase also keep mind choosing right cleanser important routine water intake sleeping pattern,1,,
@@ -140,7 +140,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 138,bought hoping find cheaper alternative kiels moisturizer using past year even low price product worth product doesnt seem soak skin apply spf top bunch dry skin becomes immediately visible problem never encountered combination skin type reference,0,,
 139,eye cream goes silky dries fast feels great feels softer eyes looks smoother sensitive skin worked great,1,,
 140,slightly disappointed thought would better original sensitive skin seemed less effective still good moisturizing definitely prefer acwel 55 ph toner,0,,
-141,like product natural ingredients easy use looks smells great however purchasing product noticed product really dries skin,0,0.0,1.0
+141,like product natural ingredients easy use looks smells great however purchasing product noticed product really dries skin,0,0.0,0.0
 142,think pulled white truffle lol love truffles product little liquidy liking prefer viscous serums especially since like use night really time serum morning lol hydrate skin feel like slippery didnt seem really penetrate skin like expected nothing groundbreaking mostly likely repurchase,0,,
 143,sure much help essence would dry rosacea addled skin glad picked hydrating soothing noticed much fewer dry patches skin seems much brighter absorbs quickly scent stinging tightening sensation highly recommend product,1,,
 144,always return soko glam get product usually try second must standard skin types,1,,
@@ -167,7 +167,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 165,works well sometimes maybe im using wrong,0,,
 166,bought toner skin dry cheeks red full acne tried several things make acne go away nothing working realized needed tone acne products try take care redness inflamed say toner really helped balanced skin made redness go away helped calmed acne bought december finished bottle today february 16 last quite bit acne prone skin dry combo skin id say really give product go meant cure acne pair stuff help soothe make go away im definetly getting another bottle,1,,
 167,skin feels looks healthier,1,,
-168,unlike cleanser ive ever used theres novelty factor still dont feel comfortable using sole eye makeup remover feel like risk breaking lashes great delicate application faint scent love use small amount cover whole face could see buying one runs,0,1.0,0.0
+168,unlike cleanser ive ever used theres novelty factor still dont feel comfortable using sole eye makeup remover feel like risk breaking lashes great delicate application faint scent love use small amount cover whole face could see buying one runs,0,1.0,1.0
 169,hi took chance buying wanted try kbeauty product needed essence personally pat toner use toner essence good watery doesnt matter highly prided skii essence also dont want essence thicker serums layer products use lightest texture heaviest okay said cooling soothing hydrating stickiness fermented products key skin balancing toning frmingyay,1,,
 170,toner really good hydrating seems help moiturizer retaiment face pot longer im happy,1,1.0,1.0
 171,calming nourishing,1,,
@@ -181,7 +181,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 179,definitely feel like toner helped remove excess impurities refreshing use however hydrating would like also like toner contains alcohol denat,0,,
 180,know unscented smells like liquid plastic recommend people sensitive scents didnt help redness blemishes sensitive skin fact actually caused little whitehead pimples pro say hydrating probably find something better disappointed im love klairs products wanted toner holy grail,0,,
 181,sent sample order loved ordered full container go product first step skin care love way skin feels wash takes days dirt makeup without drying skin skin feels hydrated soft also keep jar hand appears popular product,1,,
-182,used one night one morning like far smell absolutely amazing smells like maple syrup makes enjoyable use texture isnt like many serums almost slimy tad water texture instead essencegel texture soaks skin bit faster serums seems like really soothing serum would good sensitive skin isnt chemicals continue use believe continue good,1,1.0,0.0
+182,used one night one morning like far smell absolutely amazing smells like maple syrup makes enjoyable use texture isnt like many serums almost slimy tad water texture instead essencegel texture soaks skin bit faster serums seems like really soothing serum would good sensitive skin isnt chemicals continue use believe continue good,1,1.0,1.0
 183,tried cream reading reviews disappoint tried another one klairs creams midnight blue calming cream didnt quite stack one oily skin like thicker moisturizers one heavy gives right amount nourishment tried midnight blue cream finishing first tube repurchasing im done,1,,
 184,really hydrates locks moisture mix klairs vitamin drops put toner moisturizer great dry winter live,1,1.0,1.0
 185,ive using almost month dont really see difference skin,0,0.0,0.0
@@ -191,7 +191,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 189,love moisturizer,1,,
 190,tried sample size im confused feel firstly hate drying understand tea tree ingredient ive tried cleaning waters toners also hydrate also tried testing double cleansing see well removes leftover makeup klairs supple preparation facial toner acwells licorice ph balancing cleansing toner twice better job havent used long enough regularly see difference,0,,
 191,product wonderful even first use could already feel improvement dry skin face using regularly days feel see improvement skin face looks feels much softer dry skin almost completely gone really like doesnt leave skin feeling greasy gross feeling use bottle seem small first received however literally takes tiny drip two cover entire face ive use face oil five days bottle still looks full overall satisfied face oil continue use,1,,
-192,skin reactive products advertized sensitive skin calmed helped heal,1,1.0,0.0
+192,skin reactive products advertized sensitive skin calmed helped heal,1,1.0,1.0
 193,wasnt impressed cleansing balm packaging nice product felt good good cur>6 oil using balm trying noticed texture skin got lot worse using product dont think product blame rather one using must good enough help issue one skin usually oily dehydrated sensitive,0,,
 194,tried great reviews didnt work well hair already silky straight asian hair made even sleek almost oily heavy pass,0,0.0,0.0
 195,favorite oil based cleansers dont like scent really dislike way feels skin cleans fine favorite would recommend,0,,
@@ -210,16 +210,16 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 208,tried may different moisturizers feel good one often get dry skin nothing helps like one,0,,
 209,absorbs effortlessly skin gentle simplei wanted keep going makes skin moist dewy grease stickiness heavy feeling,1,,
 210,mediocre product didnt really leave skin feeling clean also doesnt draw impurities blackheads like thought would consistent use saw little difference,0,0.0,0.0
-211,feels great skin responding great though skin doesnt really respond well much though think product,0,1.0,0.0
-212,bought second bottle already since im worried without first time received suffering rash due aluminium makeup impatient wait try purchases soko im glad essence calmed healed rash within couple days essence im worried rashes trying different products works soothe skin,1,1.0,0.0
+211,feels great skin responding great though skin doesnt really respond well much though think product,0,1.0,1.0
+212,bought second bottle already since im worried without first time received suffering rash due aluminium makeup impatient wait try purchases soko im glad essence calmed healed rash within couple days essence im worried rashes trying different products works soothe skin,1,1.0,1.0
 213,bought acne purposes used whole thing nothing aspect great hydration though,0,,
 214,dried skin gave dehydration lines dehydrated skin proceed caution,0,,
 215,first thing ever bought advice guy work anything buy online reservations came mail opened try pleasantly surprised watertoner ran toner day cheap thing got tj maxx hawaii liked didnt love absolutely love 38 still get acne pretty frequently double cleansing swiped cotton pad shocked light feeling well skin felt good tried last night morning already pimples chin almost gone well tell type bacteria dirt buildup going away light wonderful tingles really great way im hooked ive found toner highly recommend straight away waiting go buy right promise wont disappointed,1,,
 216,appearance velocity water wouldnt say moisturizing skin appears smoother slightly brighter sensitivehyperpigmentation,0,,
 217,someone oily oppositeofsensitive skin serum didnt much terms brightening acne scars hyperpigmentation believe 5 vitamin c gentle would better sensitive skin find skin looked brighter started using toner line 34 serum bottle im sure thats toner combination two serum nice consistency smells bit like dried mangoes,0,,
-218,cleanser otherworldly gentle formula lathers beautifully immediately calms redness inflammation unlike cleansers skin feel dry tight use cant recommend product enough,1,1.0,0.0
+218,cleanser otherworldly gentle formula lathers beautifully immediately calms redness inflammation unlike cleansers skin feel dry tight use cant recommend product enough,1,1.0,1.0
 219,moisturizer great oily skin absorbs quickly leaves stickiness also love fact tube applicator,1,,
-220,good toner evening oily skin experience,1,0.0,0.0
+220,good toner evening oily skin experience,1,0.0,1.0
 221,high hopes sunscreen think finish better without dry skin matte finish preference also cast eventually settle skin youre get ready quick kinda person youll definitely need give time buffer let cast disappear guess good thing would sunscreen makes put 15 minutes go sun since takes long white cast disappear plus side weird smell applicator user friendly,0,,
 222,serum gave pimples soon used since new whole routine thought question time skin get used nope 3 weeks using night skin become drier marked unsightly fine lines never ever seen top inflamed pimples random places forehead brows upper cheeks right eyes etc etc years since acne stoped using serum order even skin tone help fade away dark spots chinneck instead left even spots bad looking skin yay skin starting regenerate original state days using,0,,
 223,came great masks ive enjoyed pampering,0,,
@@ -239,7 +239,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 237,havent noticed much differencei find exfoliator side quite harsh sensitive skin,0,0.0,0.0
 238,product bit strange say least sticky skin loves stuff made skin super plump hydrated,1,,
 239,received product free try review influenster plump lips naturally dont normally buy lip plumpers ones tried one would actually favorite tingle super intense sensation like plumpers find tolerable dont think expect super juicy lips using gives nice subtle plumpness lips,0,0.0,0.0
-240,bought rv far best face mask ive tried thought face suddenly poreless used loved,1,1.0,0.0
+240,bought rv far best face mask ive tried thought face suddenly poreless used loved,1,1.0,1.0
 241,easy apply doesnt strong smell doesnt leave white residue buy,1,,
 242,stuff slimy wouldnt use super hard wash,0,,
 243,ordered 3 weeks havent received product yet,0,,
@@ -249,7 +249,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 247,water face mask thick heavy face left sit face felt like damp wash cloth fruit extracts skin made skin felt like come back spa,0,0.0,0.0
 248,work actually stick stay,0,,
 249,product amazing doubts first gave chance super love light super gentle product gives fresh healthy skin ive wanting definitely keep using,1,,
-250,bought juicy orange love sheer like glossy type look super easy put almost glides say smell taste isnt favorite kinda smells like lemons something similar doesnt smell bad favorite smell,1,0.0,1.0
+250,bought juicy orange love sheer like glossy type look super easy put almost glides say smell taste isnt favorite kinda smells like lemons something similar doesnt smell bad favorite smell,1,0.0,0.0
 251,super light fragrance makes skin feel soft happy product,1,1.0,1.0
 252,work wonders get hormonal acne freakin spot chin every month like clockwork put go bed spot 90 resolved dont even really need put cover love,1,,
 253,essence amazing soothing feel hydrating skin soon put absorbs quickly skin ive using twice day face neck,1,,
@@ -260,7 +260,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 258,cleanser really took surprise sensitive dry acne prone skin like initially gave small breakout first used scented however using 2 weeks noticed big change smoother skin,0,,
 259,tried first time today love,1,1.0,1.0
 260,got free influenster packaging cute simple ouch hurts little goes lonnnnnggggg way take much think small amount cut half youre welcome,0,,
-261,good product dissolves difficult either toner serum making difficult use,0,0.0,0.0
+261,good product dissolves difficult either toner serum making difficult use,0,0.0,1.0
 262,oil cleanser clean zero far favorite definitely reorder,1,,
 263,received sample ordered full size love gently exfoliating removing dry flakes use twice week powerful aha use week feel like maintains results exfoliation without sensitizing skin eczema skin sensitive would recommend people dry sensitive skin wouldnt use sole exfoliator unless extremely sensitive skin feel like still need something stronger end week however think would completely recommend,1,,
 264,received product complimentary influenster testing purposes really like reduces redness doesnt heal pimple fast would like overall enjoyed product,1,,
@@ -297,7 +297,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 295,cant say enough great things sokoglam cant wait order next product,1,,
 296,best cleanser ever takes makeup light eye makeup well heavier eye makeup thick eyeliner multiple mascara applications require alternate eye makeup remover additional clean zero product used step one cleansing,1,,
 297,book informative also fun read great starting skincare routine well already obsessed beauty,1,1.0,1.0
-298,thank jenn im,1,0.0,0.0
+298,thank jenn im,1,0.0,1.0
 299,surprised received last month high quality cotton pads never found anything comes even close quality store thick dont peel leave cotton behind initially tried cutting half order save money certainly large enough found pad rolled using found annoying stopped cutting half dont roll otherwise find love luxurious feel normal thickness yes bit pricey quality justifies price,1,,
 300,skin dry used,0,0.0,0.0
 301,best essence used left face moisturized even toned watery consistency lasted,1,,
@@ -306,7 +306,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 304,really excited try cleansing oil cant stand use never rinses like another user said adding water turns odd sludgelike consistency never rinses clean ive tried various water temperatures hopes itll make difference avail add another cleanser top hopes rinsing clean havent experienced break outs may also due fact rarely use,0,,
 305,ive used different toners soko glam proven best one yet use conjunction neogen real ferment micro essence serum skin never looked better recommend three products mentioned review,1,1.0,1.0
 306,began using serum two days ago starting day constantly noticed strange smell first thought mask put new one smell stayed brushed teeth washed hands everything else could think smell would go away fast forward one day smell still thats realized serum one whiff liquid bottle id found culprit may work well early tell strange scent coming serum sticks face mask bothers enough throughout day keep using,0,0.0,0.0
-307,finally cute pimple patch wear outside work wonders makes difference sure get annoyed people say doesnt work theyre expecting gunk pimple isnt ready yet know ur product complaining please anyways love love love,1,1.0,1.0
+307,finally cute pimple patch wear outside work wonders makes difference sure get annoyed people say doesnt work theyre expecting gunk pimple isnt ready yet know ur product complaining please anyways love love love,1,1.0,0.0
 308,oh gosh even start first ingredient list moisturizer amazing first ingredient rice ferment filtrate amazing price point affordable literally unheard using weeks sensitive reactive skin loving havent type redness reaction moisturizes well helps brighten also love fragrance essential oil free commonly irritants sensitive skin hard find skincare products without love highly recommend,1,,
 309,using weeks cant say seen much improvement bit hydration love way wears makeup layers well skin care products makeup pilling separation vibe gives applying almost like milk hydro grip primer goes super smooth thick leaves sticky feeling skin like gripping primer continue buy reason skin care primer one hoping see skin care benefits future oily acne prone skin break make produce oil would recommend anyone,1,,
 310,love toner holy grail cannot live without see significant improvements skin used scars cystic acne disappearing slowly effectively,1,1.0,1.0
@@ -343,7 +343,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 341,love cleanser dont like quickly absorbs skin,0,,
 342,product simply best,1,1.0,1.0
 343,obsessed ingredients way makes skin feel would 5 star didnt fragrance smell nice prefer using products without fragrance,1,,
-344,bought husband 30yo dark circles stays late stares screen day said didnt love product couldnt tell difference using month,0,0.0,1.0
+344,bought husband 30yo dark circles stays late stares screen day said didnt love product couldnt tell difference using month,0,0.0,0.0
 345,ordered without really hearing anything first except reading sokoglam website watching video charlotte explaining decided purchase let tell ive using week noticed radiant skin started using twice three times week family noticing nice smooth skin getting mix neogen essence works good im sure ill finish product make sure,1,,
 346,amazing little patches pull everything blemishes chose 4 stars sometime leave irritation behind,0,,
 347,first retinol product said nervous start using retinol known rather drying much relief particular formula differs includes moisturizing components oilhyaluranic acid ease transition application breeze due rich buttery texture envelopes skin comforting embrace within second use skin commenced purging stage expected therefore would unfair draw final conclusions time however limited experience product noticed softened fine lines fortified suppleness complexion notei continue incorperate cream night routine look forward preparing another update soon,0,,
@@ -364,9 +364,9 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 362,love ive used serums left skin sticky serum calms skin love,1,,
 363,multitasking especially morning love scent feels,1,,
 364,product okay starts tingle minutes already naturally plump lips couldnt notice difference,0,,
-365,im 45 years old thin dry sensitive skin tend use moisturizers thicker consistency currently live summer months humid dont need use heavy moisturizer day time use night time year noticed using night morning skin felt hydrated soft would definitely order fallwinter use day night,1,1.0,0.0
+365,im 45 years old thin dry sensitive skin tend use moisturizers thicker consistency currently live summer months humid dont need use heavy moisturizer day time use night time year noticed using night morning skin felt hydrated soft would definitely order fallwinter use day night,1,1.0,1.0
 366,theyre cute dont really work youre supposed keep quite long time finally take doesnt actually anything im bit disappointed,0,0.0,0.0
-367,use beauty water every morning place traditional cleanser works like dream cleanses moisturizes skin without stripping preps skin rest morning skincare enjoy fragrance everyone youre sensitive fragrance skincare may product product easily holy grail status permanent staple morning skincare routine,1,1.0,0.0
+367,use beauty water every morning place traditional cleanser works like dream cleanses moisturizes skin without stripping preps skin rest morning skincare enjoy fragrance everyone youre sensitive fragrance skincare may product product easily holy grail status permanent staple morning skincare routine,1,1.0,1.0
 368,cute concept stickers makes feel better going blemishes however stickers dont actually anything hydrocolloid wasnt working batch got,0,,
 369,stuff gives skin dewy glow application pleasant fragrance fades away minutes skin highly sensitive oily irritate make greasy lasts smallest portion needed full coverage paint tube style also adds artsy flair,1,,
 370,product stings bad unlike anything ive ever tried keeps never really stops also broke small pimples white heads never really,0,,
@@ -421,7 +421,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 419,lightweight use almost like serum wow ive started using regular eye cream made huge difference fine lines dark circles,1,,
 420,received product free testing purposes influenster cosrx using cream repair hydrate skin far think helping little cream doesnt absorb fast even 30 minutes face absorption continue using dont like sensation sticky face,0,0.0,0.0
 421,using product years heard dupe high end expensive alternative works amazing leaves skin feeling supple interesting kind texture bit goopy applies easily,1,,
-422,bought use toner however bottle said exfoliator used consistently night skin became dry started peeling took week heavily moisturized skin repair reintroduced 3 times week seems work better skin see full potential toner love bright skin looks,0,0.0,1.0
+422,bought use toner however bottle said exfoliator used consistently night skin became dry started peeling took week heavily moisturized skin repair reintroduced 3 times week seems work better skin see full potential toner love bright skin looks,0,0.0,0.0
 423,thick cream moisturizer first made skin bit oily use think skin gotten used doesnt much anymore looking new moisturizer old one used formula changed okay serving purpose keeping skin getting dry although think ill keep looking try something new next time,0,,
 424,one people gets chapped lips quite often cold im wind im active reason luck lot dry hot whenyou get picture im held captive chapped lips anymore since finding product use couple times week night really changed texture condition lips better thick teeniest amount goes lips honestly ive using months im worried able use expires get lot price probably wouldnt count wearing day unless totally desperate thick sticks take soak works wonderfully overnight another thing makes little jar magic without irritating sensitive skin around mouth causing breakout get unsightly clogged poresblackheads like thick supposed lip balms conditioners used one keeper,1,,
 425,really weird consistency viscosity im really sure describe im trouble finding words clearly watery thick find difficult apply stretches wish thicker could stay applicator rather leave trail jar face feel like suffices moisturizer could never get,0,0.0,0.0
@@ -566,7 +566,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 564,really great allinone product never worry going drudgery getting excess sunscreenmakeup cleansing stuff one go fragrance nice lasts long time well,1,,
 565,really wanted love first essence bought full size dont notice difference skin skin doesnt look brighter tighter moisture boost negligible think since oily skin never real problems moisturizers oils thing least hasnt broken,0,,
 566,drying oily skin n made skin feel tight fragrance well,0,,
-567,ive used lot serums hold reputation absorbs skin skin still feels dry afterwards couple hours ive layered multiple cream oils top skin still feels dry took serum beauty water toner klairs cream christmas trip 12 hour flight skin literally cracking terrible terrible serum avoid,0,0.0,1.0
+567,ive used lot serums hold reputation absorbs skin skin still feels dry afterwards couple hours ive layered multiple cream oils top skin still feels dry took serum beauty water toner klairs cream christmas trip 12 hour flight skin literally cracking terrible terrible serum avoid,0,0.0,0.0
 568,nice lightweight mist hydration without oiliness absorbs quickly gave natural glow smells naturally good real ingredients,1,,
 569,really wanted like product acne scars wish would disappear buuut drank koolaid left blotchy red skin bummed really wish soko glam free returns policy additionally product expensive would suggest chancing ton great moisturizers im particularly fond innis free offers department would suggest try products oilycombination skin,0,,
 570,saw dr drays youtube channel searching hydrating toner skin always dry recently chin breaking ive using salicylic acid benzoyl peroxide drying skin even usual skin hurts get shower dry started using toner twice day morning night whenever get shower instant hydration skin looks hydrated get immediate relief best toner continue purchase cant wait try everything else,1,1.0,0.0
@@ -578,13 +578,13 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 576,havent problems pads dont absorb toner much less wasteful using plain cotton ball,1,0.0,0.0
 577,tried twice receiving sample latest order mixed two different essences skii first time neogen second first time tried thought grainy used lot neogen essence second time still felt grainy applied skin fan grainy textures im afraid abrasive rednessprone skin skin also pulled bit patting wonder mix cream instead keep trying always good experiences vitamin c products must admit trial error approach make super convenient nice vitamin c shelf stable formula far feels bit complicated especially run go routine morning,0,,
 578,idk take routine moment reminded first place dont know works face loves makes everything better,1,,
-579,skin normal dry winter gets really dry point none makeup goes smoothly primer feeling lightweight sticky spf cream best ive used since came dont think go another spf moisturizer market perfect medium toned complexion,1,1.0,0.0
+579,skin normal dry winter gets really dry point none makeup goes smoothly primer feeling lightweight sticky spf cream best ive used since came dont think go another spf moisturizer market perfect medium toned complexion,1,1.0,1.0
 580,love little patches received complimentary influester campaign pleased really like different sizes included put right bed wake less visible blemish pimplepatch complimentary,1,,
 581,mild inoffensive essence thats using neogen essence adored went hoping save money well get pay young flawless super sensitive skin may giving need give,0,,
 582,havent noticed huge difference skin product great getting extra make face wash overall leaving face feeling clean,1,1.0,1.0
 583,im still search perfect toner many many cotton rounds later cant say anything bad toner nothing great either used empty feat within many times ive bought toner either dries skin causes issuesthis one didnt cause additional issues,0,0.0,0.0
 584,love love love conditioner fine color treated hair weigh volume hair never soft shiny another plus natural curly hair usually gets frizzy day 2 go three days straight frizz shiny hair definitely buying full size,1,1.0,1.0
-585,great product first days started develop tiny whiteheads across face think fact essential oils leaveon product feels refreshing cooling longer use,0,1.0,0.0
+585,great product first days started develop tiny whiteheads across face think fact essential oils leaveon product feels refreshing cooling longer use,0,1.0,1.0
 586,doesnt really cure completely takes many patches cure one zit,0,,
 587,get dry skin wake morning even moisturize night cream however leaves face feeling super soft morning amazing texture put makes skin feel much firmer leaves little sheen first goes time sheen disappears face absorbs moisture face becomes matte moisturized im prone breakouts cream didnt give acne would recommend,1,,
 588,product smells great right moisturizer combination skin oily side also suffer acne didnt get breakouts using product makes face feels tight worth try,0,0.0,0.0
@@ -597,7 +597,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 595,got toner 15 year old face calmed well pats use cotton pad results beautiful,1,,
 596,one favorite products provides tons moisture almost immediately without heavy sticky feeling apply generous layer every night skin drinks feeling soft smooth moisturized morning sometimes run regular moisturizer apply thing layer mask keeps skin comfortably hydrated day long,1,,
 597,buy lot toners one go back skin seems really like coconut skin definitely looks clearer brightened use,1,,
-598,use skin least bit sensitive burns itches minute spraypat face made sensitivecombo skin red uncomfortable feeling retuned seller wonderful refunding great customer service recommend acwell,0,1.0,0.0
+598,use skin least bit sensitive burns itches minute spraypat face made sensitivecombo skin red uncomfortable feeling retuned seller wonderful refunding great customer service recommend acwell,0,1.0,1.0
 599,hunt moisturizing lotion 8 months ago found smoothing cream used twice daily sometimes 34 times face super dry notice 8 months face lightened well skin feels lot smoother texture cream sticky dry fairly fast love highly recommend tried multiple lotions sokoglam one seems work best give try see,1,1.0,1.0
 600,second time using product first time skin bad state wanted try second time skin better made skin really dry although claims moisturize well essential oils product also kind irritate skin even though dont consider skin sensitive bummer didnt work,0,,
 601,love texture quickly absorbs skin like light smell greasy bit pricey would purchase,0,,
@@ -608,7 +608,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 606,ive using product week first thing immediately noticed serum felt oily put face felt like sitting doesnt absorb quickly wear night wake morning causes tzone produce oil really annoying despite product really works got rid acne scars still continue use,0,,
 607,tried every chapstick lip bal lip butter lip oil planet yet nothing nourishes lips always find weird gross buildup white dead lip skin sounds repulsive say inside lip every lip product omg stuff hydrates well wake every morning soft supple lips also use day even worn lips stay hydrated dont feel need obsessively reapply lick lips sayounara gross dead lip skin buildup need life wont regret,1,1.0,1.0
 608,love stuff really light doesnt much scent foams leaves face feeling clean without harsh,1,,
-609,personally dont well teatree oil days youre sensitive teatree fragrance dont recommend product nice cleanser otherwise foams nicely doesnt leave skin feeling tight afterwards,0,1.0,0.0
+609,personally dont well teatree oil days youre sensitive teatree fragrance dont recommend product nice cleanser otherwise foams nicely doesnt leave skin feeling tight afterwards,0,1.0,1.0
 610,ive using 12 weeks see difference im breaking forehead says combination skin type using skin oily especially forehead nose skin softer im sure like,0,0.0,0.0
 611,really moisturizing,1,,
 612,toner gives dewy glass like skin,0,,
@@ -619,7 +619,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 617,got mom dark spots hyperpigmentation dark circles name directed applied night daily 7th8th day moms face literally started peeling got dry small bumps everywhere face point bad event go make looked horrible would sit well due bumps dry skin make looked super cakey even applying moisturizer hydrating primer make look better guess differnt every skin sure got dry skin even 1 week stopping use face texture feels dry looks like cracked skin really bad lost elasticity skin cant wait normal face back,0,0.0,0.0
 618,product feel like protecting thin however work needs reapplied often smell greatest enjoy using knowing good sensitive skin enjoyed feeling like additional moisturizer kept aware application,0,0.0,0.0
 619,dry acne prone skin recommended sokoglam first time used made breakout soo much dried already dry skin highly disappointed barely used,0,0.0,0.0
-620,rotate mild toners use couple exfoliating products definitely says,1,1.0,0.0
+620,rotate mild toners use couple exfoliating products definitely says,1,0.0,1.0
 621,skin broke provide hydration made skin really dry,0,,
 622,used never believe eye cream bought treat woke brighter eyes less puffiness ive really mind changed,1,,
 623,like toner using almost 2 years,1,,
@@ -649,7 +649,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 647,oily skin sunscreens tend exacerbate issue formula pretty light doesnt seem make skin oily hate typical sunscreen smell light scent makes actually want wear,1,,
 648,work great cost cant beaten finish dots allows wear throughout day people dont even notice one,1,,
 649,im gong purchasing one regular melts makeup including eye makeup away,0,,
-650,bought swanicoco toner love sold months product okay smells like fruit loops concerning theres nothing natural fruit loops watery use cotton fabric round apply instead hands feel like lose lot product way really didnt much skin ive breaking lot lately attribute mask wearing stresseating lot dairy feel like product benefited way want toner sake using toner huge bottle decent price go like skincare products serve actual skincare purpose id pass one,0,0.0,1.0
+650,bought swanicoco toner love sold months product okay smells like fruit loops concerning theres nothing natural fruit loops watery use cotton fabric round apply instead hands feel like lose lot product way really didnt much skin ive breaking lot lately attribute mask wearing stresseating lot dairy feel like product benefited way want toner sake using toner huge bottle decent price go like skincare products serve actual skincare purpose id pass one,0,0.0,0.0
 651,product one favorite cleansers used years noticed wonders skin overly strip skin cleanses satisfaction recently tried cleanser 3x cost cleanser recommended friend happens esthetician however noticed using cleanser correlated skin breaking restarted using cleanser skin cleared,1,0.0,0.0
 652,wanted love vitamin c serum awful acne prone sensitive skin skin irritated broke,0,,
 653,balm nice texture glides cheeks well little tends go long way last day sure color feel like bit orange tone dont like lips would consider trying pinkerredder tone overall nice product,1,,
@@ -700,10 +700,10 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 698,use product cotton pad double cleanse im always shocked still manages pick skin reason give 4 instead 5 stars scent bit stronger like skincare products,0,,
 699,fragrance irritates skin,0,,
 700,tried sample product found didnt dissolve easily felt grainy applied,0,,
-701,product good sensitive oily acne prone skin noticed almost immediate improvement skin started using product drying makes face feel clean fresh every time use didnt seem help prevent breakouts however improve overall complexion helped brighten even skin tone,1,0.0,1.0
+701,product good sensitive oily acne prone skin noticed almost immediate improvement skin started using product drying makes face feel clean fresh every time use didnt seem help prevent breakouts however improve overall complexion helped brighten even skin tone,1,0.0,0.0
 702,v nice,0,,
 703,recieved sample cosrx pimple master infuenster exchange honest review recently bad breakout patch really relieved size puss pimple,1,,
-704,downside see far pore visible products started routine 2 weeks ago dont see skin improving ill give time though favorite neogen green tea foam cleanser gentle cleans skin without irritation,0,1.0,0.0
+704,downside see far pore visible products started routine 2 weeks ago dont see skin improving ill give time though favorite neogen green tea foam cleanser gentle cleans skin without irritation,0,1.0,1.0
 705,ive tried many spot treatments years yet find one actually anything apply night hour evening skincare routine let dry another hour go bed morning completely wiped pimples red angry day formula also stings sometimes,0,0.0,0.0
 706,felt slight improvement skin texture overall using didnt break like many new products consistency nice smooth doesnt dry sticky absorbing skin feels amazing plump right applying  finished first bottle little less two months daily use waiting new one arrive great size weight plastic bottle travel,1,,
 707,helps hydrate skin suitable oily skin happy toner,1,,
@@ -808,7 +808,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 806,purchased essence given great reviews using 2 months didnt notice changes skin disappointing ended giving away friend try,0,,
 807,best toner ive ever,1,,
 808,wow powder much better expensive liquid vitamin c serums gently naturally efficiently exfoliates nourishes skin helped heel burns hands quickly amazing peeling brown spots gradually,1,1.0,1.0
-809,may favorite purchase made soko glam struggle mildmoderate body acne struggled find something help used product times paired tea tree care body spray klavuu wow wow wow already see difference skin impressed uses definitely buying whole set keep purchasing future great product also nice smell,1,1.0,0.0
+809,may favorite purchase made soko glam struggle mildmoderate body acne struggled find something help used product times paired tea tree care body spray klavuu wow wow wow already see difference skin impressed uses definitely buying whole set keep purchasing future great product also nice smell,1,1.0,1.0
 810,product definitely hydrating almost slimy texture havent using long enough see results like pumping mechanism one thing notice though product absorbs feel considerable amount tightness skin dont particularly enjoy,0,,
 811,drysensitive skin tried vitamin c previously since tried colourpop ended skin burn definitely due fragrance extra fillers product decided research find vita c product wouldnt burn skin due harsh burning experience decided try powder doesnt oxidize means potency wont fade time powder form much stable drops makes easier scoop allows easy measure every time 17 thought going irritate skin 2nd vita c product ever used im also black acne scars ive always wanted see gone didnt even burn put skin used hyaluronic acid toner allows calming soothing benefit since vita c pure liquid form unstable product product used twice week use morning get benefits im looking new spf sun disturb product leaving another review couple weeks usage wish could post pictures,0,,
 812,lush crazy hydrating scent stuck fridge little extra soothing spending long time outdoors kept rotation,1,1.0,1.0
@@ -817,7 +817,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 815,use get monthly hormonal breakout helps skin much breakout much smaller less red wake next morning,1,,
 816,hormonal acne far love toner sensitive skin use couple times week actives far helped skin less red inflamed sure helped acne yet ill give time,1,,
 817,honest high hopes product weird combination skin zone oily cheeks normal chin area dry nothing retain moisture oily parts drying drier areas put much peelsflakes make,0,0.0,0.0
-818,liquid liner easy apply waterproof stays day,1,1.0,0.0
+818,liquid liner easy apply waterproof stays day,1,1.0,1.0
 819,moisturizer key helping combat dry dehydrated skin little goes long way light clean fragrance skin soaks remains nourished moisturized looks bouncy entire day also use evening routine works beautifully products routinesnever pills leaves cast,1,1.0,1.0
 820,purchased stars sons try younger son liked tried purchase using student beans discount unable apply discount received message discount cannot applied even though exclusions listed rainbow stars bundles purchasing regular stars reached customer service nobody got back low rating customers service nonexistent,0,,
 821,gives glow moisturizing love step routine,1,,
@@ -842,26 +842,26 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 840,eye serum feels cool going due balls gently massage product one swipes across eye eventually sink easy apply much spend minutes tapping nice night irritate give milla gel product feels cooling relaxing self care hydrating dont know necessary end using finger anyway original thought ease application doesnt apply feels nice eyes tired,1,,
 841,usually dont like oils face tends greasy however oil different nothing great things say using last couple weeks noticed huge difference definitely recommend,1,0.0,0.0
 842,truly amazing toner gives skin thorough cleaning toner ive use still leaving feeling soft moisturized,1,,
-843,new fav light makeup harsh scents coloring need good price amount product huge plus budget,1,1.0,0.0
+843,new fav light makeup harsh scents coloring need good price amount product huge plus budget,1,1.0,1.0
 844,love vitamin c powder form mix essence disappears right away upon spication worries going bad take time using knowing wont go bad love,1,,
 845,great sensitive skin feel clean using,1,,
 846,texture cleaner thin lightweight gentle skin leaves hydrated double cleansing dont wear heavy make great job taking products well purchased product mistake oily skin gonna get bha cleanser line accidentally got pha instead works well part bha slightly thicker better job removing grease impurities pores,1,,
 847,first tube dr althea loving far,1,,
 848,omg friend told tried thinking wont work like say well tell miracle bottle sensitive skin everything breaks gives major redness son park beauty gel neogen green tea foaming face wash 3 items using skincare regimen also vitiligo forehead well alopecia hair line using 2 weeks swiping hairline seen major improvement discoloration seen new hair growth cannot thank friend susie enough introducing korean skincare,0,,
-849,skin great stuff wanted see would notice difference tried something different mostly fermented ingredients snail secretions skin doesnt feel soft hydrated supple dont let low price fool stuff amazing skin officially spoken reordering soon finish post,0,0.0,1.0
+849,skin great stuff wanted see would notice difference tried something different mostly fermented ingredients snail secretions skin doesnt feel soft hydrated supple dont let low price fool stuff amazing skin officially spoken reordering soon finish post,0,0.0,0.0
 850,love texture moisturizer cant stand use anymore smells chemically almost like type industrial product despite light texture makes skin look shiny greasy even without serum underneath skin extra shine suffered mini breakout use,0,,
 851,fan foam cleansers prefer cleansers lather feel like better job cleaning skin said like minimal ingredients even appreciate soft cloudlike texture cleanser scent fragrance makes good people sensitive skin perfect gentle morning cleanse however foam deflates massage skin makes feel like use get skin clean night time double cleanse prefer go something little heavy duty,0,,
 852,go moisturizer feel lost love,1,,
 853,like title says drastically lightened dark spots exfoliates skin really nicely super easy fast use also really nice smell,1,,
 854,used literally saw results day,0,,
-855,sensitive skin react quickly products aggravate luckily product cause skin react negatively cica repair snail cream light moisturizing cream think cica product keeps skin calm redness normally cheeks rosacea longer product also calmed prevented occasional breakouts tend suffer loving positive results cream,1,1.0,0.0
+855,sensitive skin react quickly products aggravate luckily product cause skin react negatively cica repair snail cream light moisturizing cream think cica product keeps skin calm redness normally cheeks rosacea longer product also calmed prevented occasional breakouts tend suffer loving positive results cream,1,1.0,1.0
 856,really like products brand,1,,
 857,product smells like green skittles lol havent noticed difference pores skin sides nose around mouth red irritated,0,,
 858,thick long hair oil really helps hair keep calm hair feels soft applying dont need much like better moroccanoil used use highly recommend,1,,
 859,made skin little glow great coverage sun bought right color,1,1.0,1.0
 860,dry sensitive skin toner left skin even sensitive unlike korean toners missha soften skin,0,,
 861,honey serum feels like silk skin im love ingredients however wish clean vegan definitely purchasing future extremely sensitive combination skin type break serum would work best winterfall months night time,0,,
-862,adding routine acne nearly nonexistent,0,0.0,0.0
+862,adding routine acne nearly nonexistent,0,0.0,1.0
 863,absolutely love starface face wash toner tired seeing hype stars tried multiple times used overnight multiple nights ive giant painful zits two weeks laughable hope dont delete review honest truth kept buying thinking something wrong honestly dont think stars work everyone disappointed believing great reviews cannot one whose skin work,0,,
 864,great using felt breaking little,0,,
 865,combination skin dry extra dry pruduct nothing skin,0,0.0,0.0
@@ -909,7 +909,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 907,really wanted love disappointed quality products see difference expected using almost month,0,0.0,0.0
 908,love toner use mornings apply serum moisturizer leaves skin feeling ready drink rest products sensitive skin loves would totally recommend,1,,
 909,sensitive skin reason burnt skin bad skin turned red hurt lot,0,0.0,0.0
-910,love cream dry sensitive acne prone skin like using moistureizer night also use spots extra dry need morning routine thing keeps skin feeling tight already repurchased continue buying kind heavy im sure would best oily skin,1,1.0,0.0
+910,love cream dry sensitive acne prone skin like using moistureizer night also use spots extra dry need morning routine thing keeps skin feeling tight already repurchased continue buying kind heavy im sure would best oily skin,1,1.0,1.0
 911,rarely break get 12 pimples month around chin menstrual cycle using 2x barrier cream breaking forehead especially temples tons little red pimples yikes seems like works many wanted share experience two stars bc combo absorbed really well kept skin dewy,0,,
 912,cutest packaging sheet mask amazing purchased 3 used first one good leaves face feeling soft supple,1,,
 913,hydrated,1,,
@@ -922,7 +922,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 920,mist super fine refreshing havent noticed big difference far,1,,
 921,hydrating enough dehydrated skin made skin even oilier,0,,
 922,glad tried smearing snail mucin face 41 experiencing dryness pigmentation fine lines last couple years within week noticed huge difference hydration plumpness skin dark spots started fade using 6 weeks skin looks best years also using cosrx lightning liquid glad tried k beauty,0,1.0,1.0
-923,melts makeup leaving face feeling clean skin doesnt feel stripped oily clean repeat,1,1.0,0.0
+923,melts makeup leaving face feeling clean skin doesnt feel stripped oily clean repeat,1,1.0,1.0
 924,bought product hopes would help oilyacne prone skin get hydration notice difference product sat flat face without ever really absorbed purchase,0,,
 925,sent product free exchange honest opinion first little hesitant try costx advanced snail 92 one cream first made mainly snail slimesecretion ive always heard snail mucin wonders skin people regularly use look much younger doesnt bad smell mind matter rubbed moisturizer face definitely didnt need add moisturizer afterwards stuff made skin feel super nourished plump gave dewy glow im eager see skin looks longer use snailedit,0,1.0,0.0
 926,sheet mask soothing,1,1.0,1.0
@@ -965,9 +965,9 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 963,makeup literally melts extremely cleansing without overly dry skin tugging pulling needed remove makeup cleanse skin product,1,,
 964,skin feels moisturizet,1,,
 965,hardly noticeable skin clears pimples quickly efficiently havent tried pimple patches seem costeffective amount get brands seem similarish price less patches per pack also great youre picker helps resist urge give pimples quick squeeze,1,,
-966,havent used serum like love really milky hydrating works nicely summer oily skin may much face get oilier day goes dont mind glow look staple skincare routine know really help winter time,1,0.0,0.0
+966,havent used serum like love really milky hydrating works nicely summer oily skin may much face get oilier day goes dont mind glow look staple skincare routine know really help winter time,1,0.0,1.0
 967,love gently exfoliate skin gives subtle glow hydrates skin toner ill use toning ive used 2 weeks im glad charlotte curated product thank curating need get,1,,
-968,similar reviews chronically dry dehydrated skin thought would good moisturizer insanely sticky even use little 510 minutes applying face feels super super tacky make skin feel hydrated use night skin feels less ok morning need moisturize twice day use morning tackiness annoying uncomfortable whats use tiniest bit almost like starts peeling away face general kind disappointed soko glam ive spent quite bit cur peoples recommendations products actually seeing results none moisturizers ive tried work well allbefore using avene creme hydrance rich 100000x better sigh also scent strong almost unbearable,0,0.0,1.0
+968,similar reviews chronically dry dehydrated skin thought would good moisturizer insanely sticky even use little 510 minutes applying face feels super super tacky make skin feel hydrated use night skin feels less ok morning need moisturize twice day use morning tackiness annoying uncomfortable whats use tiniest bit almost like starts peeling away face general kind disappointed soko glam ive spent quite bit cur peoples recommendations products actually seeing results none moisturizers ive tried work well allbefore using avene creme hydrance rich 100000x better sigh also scent strong almost unbearable,0,0.0,0.0
 969,really love cleanser feels gentle like really foaming deep pores use morning help control oil face throughout day,1,,
 970,ive used repurchased product several times ive come notice product clogs pores causes little bumps skin acneprone skin areas dont tend break started thinking clogs pores taking good care skin rinse product feels waxy didnt work wish didnt purchase larger bottle,0,,
 971,looking new essence produced best results far first time using mugwort product love texture slightly sticky similar serum dense dries quickly pores sucked right someone also sensitive skinacneprone skin perfect antiinflammatory properties definitely new holy grail essence,1,,
@@ -996,8 +996,8 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 994,although really loved skin concierge experience product tone recommended way light really dont like consistency product,0,,
 995,live dry climate moisturizer wasnt enough later another moisturizer shea butter skin didnt feel tight throughout day would better humid climate,0,,
 996,like warm sensation apply serum guess say already feel vitamins anyhow havent seen change past 3 weeks using product dont use often 23 times week change skin routine depending feeling day customize lot went spa requested vitamin facial said shouldnt still active acne may worsen hearing use serum dont active acne least apply areas dont active acne,0,,
-997,ive used cream 23 times week two weeks ive noticed fewer pimples breakouts use night last skincare step bed morning ive used cream pores seem smaller probably mixture exfoliant plumping effect moisturizers skin cant get away without properly cleansing using want wash dead skin cells impurities mention leaves slightly greasy feeling washed,0,0.0,0.0
-998,love love love hair oil first hesitant purchasing lets honest cheap im happy long hair around around butt honestly dont need much product tiny amount enough gives much moisture shine hair makes ends look alive happy oil,1,1.0,0.0
+997,ive used cream 23 times week two weeks ive noticed fewer pimples breakouts use night last skincare step bed morning ive used cream pores seem smaller probably mixture exfoliant plumping effect moisturizers skin cant get away without properly cleansing using want wash dead skin cells impurities mention leaves slightly greasy feeling washed,0,0.0,1.0
+998,love love love hair oil first hesitant purchasing lets honest cheap im happy long hair around around butt honestly dont need much product tiny amount enough gives much moisture shine hair makes ends look alive happy oil,1,1.0,1.0
 999,skin never felt better use night really sinks skin feel great wake super hydrating works well alongside toner acne scars practically gone,1,,
 1000,maybe got old pen could barely get liner ink come light color saturated,0,0.0,0.0
 1001,liked product package really know effective misleading cute packaging though,0,0.0,0.0
@@ -1006,13 +1006,13 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1004,hydrates without making skin greasy feels like babys butt morning,1,1.0,1.0
 1005,ive never dry skin moved last year received sample loved right away tiny drop need makes skin soft,1,,
 1006,kept face hydrated moisturized apply last step night routine great effect next day highly recommend,1,,
-1007,ive using product morning night past 15 months serum moisturizer ive seen improvement skins consistency pores look smaller,1,1.0,0.0
+1007,ive using product morning night past 15 months serum moisturizer ive seen improvement skins consistency pores look smaller,1,1.0,1.0
 1008,first product sokoglam enjoyed recommended list project body spray expected help bite acne prone skin project really disappoints smells heavy alcohol way stabilizing agent smells smells like mouthwash alcohol feels like skin caused skin itch flake break previous product would recommend phenomenal body acne would 30 day body wash truly helped clear skin without drying irritating combination acne prone skin reference,0,,
 1009,first time life patch dry skin eyebrow eyelid didnt know ever since started using flaky,0,,
-1010,product worked great dried boyfriends skin hence 1 star combination skin maybe winter breeze causing dry product worked well,0,0.0,0.0
+1010,product worked great dried boyfriends skin hence 1 star combination skin maybe winter breeze causing dry product worked well,0,0.0,1.0
 1011,bought thought would help acne didnt really use often enough able see results however apply night sleep wake dewy skin use slugging technique know im using enough moisturizer truly different type moisturedewy feeling use dont slugging technique still wake amazing dewy skin,0,,
 1012,ive purchased product past absolutely love take advantage sale price bc previous bottle running low needed something could also get free shipping good everyday toner amazing ingredient list doesnt irritate super sensitive skin doesnt leave heavy residue stickiness behind love dispenserpackaging well another winner benton thanks soko making available great price,1,,
-1013,initially purchased missha treatment essence month ago ive using ever since far help serum moisturizer absorb better pleasant scent comparing skii think good dupe skii essence however 150ml bottle sold cur>30 korea bought bottle see korea version different us version,1,0.0,1.0
+1013,initially purchased missha treatment essence month ago ive using ever since far help serum moisturizer absorb better pleasant scent comparing skii think good dupe skii essence however 150ml bottle sold cur>30 korea bought bottle see korea version different us version,1,0.0,0.0
 1014,dry menopausal skin takes lot right keep skin dry sahara im afraid didnt pass said luxurious texture didnt break clog pores nice purchase perhaps someone normal combo skin,0,,
 1015,really enjoyed serum first however oxidized quickly 1 month despite storing dark place sealing tightly use disappointed quite bit left bottle wish sold smaller bottles different packaging avoid issue future,0,,
 1016,sensitive nose scents moisturizer isnt scent smells nice fresh strong smell lightweight texture doesnt feel greasy good wearing daytime oily skin,0,,
@@ -1033,7 +1033,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1031,really wanted love moisturizer amazing ingredients something seems clogging pores ive tried switching products every time use multiple times row notice clogged pores however definitely gentle hydrating might work really well others slight candylike scent found fade quickly didnt bother also gelcream texture worked surprisingly well dry skin weather got colder dont regret giving shot wont repurchasing,0,,
 1032,im big fan cleanser packaging working week started using pump started getting tighter tighter didnt drop anything weird point two weeks started using pump really difficult push barely foam comes tried see anything clogging looks normal im sure whats going pretty sad since really like cleanser rate packaging unusable week,0,,
 1033,finally found product works skin affordable love smells nice skin feels amazing use,1,1.0,1.0
-1034,love cleanser solid making super easy travel second time ive purchased think part travel routine long time cleanses well smells great strong,1,1.0,0.0
+1034,love cleanser solid making super easy travel second time ive purchased think part travel routine long time cleanses well smells great strong,1,1.0,1.0
 1035,excited try gel cleanser using 2 12 weeks noticed dried cheek area combination sensitive skin cleanser recommended sensitive skin didnt work im still loyal cosrx products,0,,
 1036,love texture moisturizer melts beautifully skin doesnt leave shiny greasy lighter expected skin feel bit dry morning use product nighttime moisturizer winter overall im really happy floral scent pretty strong may pleasing everyone,1,1.0,1.0
 1037,tried soooo hard like product like texture overall experience still gave 3 stars made break every time tried cut restarted times make sure issue sadly ive got lot product left cant use made version without essential oils would definitely try im disappointed,0,,
@@ -1060,7 +1060,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1058,lately standby cleanser hasnt working way used skin congested getting random little breakouts areas face im used acne finally decided try cleanser seeing many adsbeing curious ive using almost 3 weeks really helped clear porescontrol breakouts ive experiencing began noticing differences days using take couple weeks really start full effect hoping still hoping see continued improvement time im still seeing blackheads clear quite well hoped overall satisfied product never used oil cleaner really loving use evening followed gentle foaming cleanser skin somewhat sensitivereactive new things really didnt much purging introducing product routine definitely recommend,1,,
 1059,try something else mire affordable ultimately came back instead,0,,
 1060,cant tell much love product never skin healthy smooth satisfied thanks product side packaging specifically useful pump cant get product bottle going reorder changed mind bad packaging hope sg something,1,,
-1061,come back use cream makes skin soft greasy ill stay,1,1.0,0.0
+1061,come back use cream makes skin soft greasy ill stay,1,1.0,1.0
 1062,light coverage normal combinations skin sure ill order,0,,
 1063,definitely smudges couple hours maybe coz sweat lot dont use eye primer live hot humid country,0,,
 1064,still havent received,0,,
@@ -1115,7 +1115,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1113,normally dont write reviews thought warranted one bought based success dr oracle thera toner peeling sticks hoping would finally get products good acne prone hormonal cystic dehydrated skin mainly acne meds used months initial reaction wasnt hydrating enough even combo toner figured least causing break however using couple months noticed numerous comedones along cheek area tend put product combat dryness wasnt cut product completely weeks later noticed clogged pores finally clearing using acne meds dont think product well skin current acne med regimen clogged pores much bad really wanted like,0,,
 1114,job well without extra effort,1,1.0,1.0
 1115,love doesnt leave oily skin greasy,1,,
-1116,lemon scent doesnt strip skin,0,1.0,0.0
+1116,lemon scent doesnt strip skin,0,1.0,1.0
 1117,ive never seen dramatic changes skin one product two days starting use husband told unprompted skin looked great recommended countless people already,1,,
 1118,sure feel sunscreen yet doesnt seem soak face look bit greasy use think gets better,1,,
 1119,product always makes skin feel really hot itchy almost feels like got sunburned would recommend,0,,
@@ -1199,7 +1199,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1197,saw many review made think best thing since pockets shirt got impressed fan bottle design feel easy use dropper get product feel like skin moisturized plumper impressed going back neogen white truffle oil serum reason returning use night cannot feel skin feel tight uncomfortable feel like id better using hyaluronic acid eva longoria sells television save money unless like disappointed,0,,
 1198,love banila co tried balms particular one found fragrance used several times dont see results seeing original feel like even though made oily skin types much skin,0,,
 1199,really excited try toner due licorice extract left face greasy film never really sunk skin really wish would worked,0,,
-1200,ive using 2 months skin looks brighter plumper smoother definitely hydrating well application feels nice sinks skin quickly packaging issue im serum dropper difficult use product gets caught inside,0,1.0,0.0
+1200,ive using 2 months skin looks brighter plumper smoother definitely hydrating well application feels nice sinks skin quickly packaging issue im serum dropper difficult use product gets caught inside,0,1.0,1.0
 1201,tried toner great reviews however essence hydrating soothing caused breakouts face slight rash first time used fair skin sensitive oily side products cause breakout gave tries rash breakouts continued occur stopped using product give product someone drier skin 5 5 stars sokoglams costumer service though,0,,
 1202,makes skin look super hydrated smell whatsoever little goes long way,0,1.0,1.0
 1203,love product,1,,
@@ -1232,7 +1232,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1230,bought misha bb cream one hand make tool cover red spots face hand sun protection noticed 10stepskincare process face wet glow didnt like bb cream however gave perfect finish face looks matt nurshied without visible makeup effect time protected sun happy option,1,,
 1231,didnt notice lot brightening help even skin tone bottle little inconvenient pour essence hand like ketchup bottle product hydrating wow point definitely plumping skin definitely even toned like,1,0.0,0.0
 1232,love micro mist purchase,1,1.0,1.0
-1233,moisturizer super messy kind stringy bad feels nice moisturizing enough dry skin overall impressed,0,0.0,1.0
+1233,moisturizer super messy kind stringy bad feels nice moisturizing enough dry skin overall impressed,0,0.0,0.0
 1234,skin sensitive usually gets red using toner one never happened best toner used bought several bottles,1,,
 1235,usually use oil cleansers decided try luckily skin react negative product disappointed way product removed makeup im currently using hanskin pha cleansing oil recommended askin consultation sokoglam working much better,0,,
 1236,cute wore zoom meetings day still felt cute win,1,,
@@ -1244,7 +1244,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1242,scent bit much think expecting something milder given gentle skin ph restoring purported like removed last traces makeup face right around time started using developed perioral dermatitis pod first time life pod associated things one root cause changes skin care routine pod subsided im bit afraid try beauty water case cause outbreak okay didnt get results folks claimed got serious skin disruption many doctors say caused skin care items like well see happens test,0,,
 1243,alright didnt notice improvement using product dont think tint complimented lips ok overall wont purchasing,0,,
 1244,sensitive combination skin since moisturizers heavy ive looking lightweight alternative jelly consistency smooth gentle skin notice glow using especially combined vitamin c serum definitely recommend,1,1.0,1.0
-1245,received product free influenster cosrx first impression product blended right skin absorbed oil dry skin minimal sensitivityredness theres strong oder big deal skin felt soft instantly felt subtle glow wear makeup skin softness last day im pleased product,1,1.0,0.0
+1245,received product free influenster cosrx first impression product blended right skin absorbed oil dry skin minimal sensitivityredness theres strong oder big deal skin felt soft instantly felt subtle glow wear makeup skin softness last day im pleased product,1,1.0,1.0
 1246,got sunscreen part sun daily defense kit absolute favorite sunscreen think best suits people combination oily skin quickly absorbed skin leaves matte finish find especially helpful since tzone gets incredibly oily summer person color im also thrilled report doesnt leave white cast like daylight protection sunscreen wasnt fastabsorbing would frequently pill mask also found bit heavy times airy sunscreen exact opposite lightweight rest easy knowing im getting good coverage,1,,
 1247,bought product last may using consistently rest routine noticed 1wk using developed breakout stopped using waited 2 weeks pimple heal started using away zone applied cheeks breakout started showing think right moisturizer type skin hate return product cant use waste alternative moisturizer recommend soko glam team would good sensitive skin,0,0.0,0.0
 1248,makes skin look dewy little bit irritating get close eyes,0,,
@@ -1277,7 +1277,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1275,moisturizer one best ones ive ever used sensitive skin refreshing moisturizer doesnt burn applying leaves skin feeling hydrated doesnt give greasy film others im probably going try rest line becasue much enjoyed product high sensitivity moisturizer,1,,
 1276,lotion caused skin breakout splotchy patches disappointed,0,,
 1277,sensitive skin products irritate redden skin even feel like burning face dont get lot break outs moisturizer doesnt sting little goes long way thick probably looking daytime moisturizer lighter feel keep one staple night time stay home moisturizer,0,,
-1278,month havent seen major improvement job good ingredients feels gentle dont feel like cleansed way end alternating krave matcha hemp ticks boxes ph level also bothers bit like use many actives serums routine im hoping get new 55 foam cleanser would amazing,0,0.0,1.0
+1278,month havent seen major improvement job good ingredients feels gentle dont feel like cleansed way end alternating krave matcha hemp ticks boxes ph level also bothers bit like use many actives serums routine im hoping get new 55 foam cleanser would amazing,0,0.0,0.0
 1279,didnt like product cleansed well except face felt dry afterwards dry rest korean skin care didnt seem cooperative cleanser dry senstive skin redness across nose cheeks hormonal breakouts,0,,
 1280,enjoyed cleansing oil cleanses skin doesnt dry skin like face washes tended dont need overcompensate face lotion feel skin improved last days,0,0.0,0.0
 1281,fragrance bit strong smells herbal wasnt pleasant,0,,
@@ -1335,7 +1335,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1333,liked product indeed moisturize make skin dewy feels like film something soaks personally ok get compliments glowing skin wear,0,0.0,0.0
 1334,use cotton pad exfoliate flaredup areas face using cleanser think done decent job healing acne slightly faster nothing amazing,0,,
 1335,using another brand soko decided try couple brands recommended soko glam place go skincare unfortunately nothing also left sticky gluelike residue skin anything may made acne spots bit worse residue scrubbing surprised disappointed,0,0.0,0.0
-1336,love live tinted products general disappointed hueguard definitely significant white cast noticeable one would recommend using black girl sunscreen similar clear product instead one,0,1.0,1.0
+1336,love live tinted products general disappointed hueguard definitely significant white cast noticeable one would recommend using black girl sunscreen similar clear product instead one,0,1.0,0.0
 1337,thick leave white cast dont blend hard enough type sunscreen clogs pores makes break really miss skinfood sunscreen lightweight easy blend white cast unfortunately longer sold,0,,
 1338,trust mask magical keep purchasing everytime got new acne redness immediately use mask calms acne pretty quickly wont see anymore redness next day,1,1.0,0.0
 1339,dont put anything hair put damped hair flat ironing changed hair game,0,,
@@ -1363,7 +1363,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1361,love effortlessness product misting pump makes use eas also saw instant difference even texture skin,1,1.0,1.0
 1362,wish read ingredients list closer didnt realize fragrance feels lightweight blends nicely fragrance doesnt bother would fine,0,,
 1363,im really enjoying toner pads ive got dark pigmentation spots cheeks vitamin c helping lighten using morning night havent issues sensitive skin,1,,
-1364,received complimentary influenster cosrx cur>6 steal work easy use affordable bad picking pimples put day home day wont pick pimples definitely worth trying also gross weirdly satisfying start see white theyve absorbed secretions pimple lol,1,0.0,1.0
+1364,received complimentary influenster cosrx cur>6 steal work easy use affordable bad picking pimples put day home day wont pick pimples definitely worth trying also gross weirdly satisfying start see white theyve absorbed secretions pimple lol,1,0.0,0.0
 1365,stuff perfect ive gotten many compliments great skin looks wearing,1,,
 1366,good toner,1,1.0,1.0
 1367,stars cute didnt seem stick last long maybe naturally greasy skin sure pretty disappointed,0,,
@@ -1386,7 +1386,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1384,seeing many good reviews youtube decided finally give try great removing face make days full face make even use minimal make took star great eyes still use eye make remover saw many make influencers remove eye make use waterproofsmudge proof eye make remover didnt remove everything also felt like left residue eye still go back use eye make remover remove eye make however makes face soft better cloth wipes,0,,
 1385,gentle skin leaves feeling baby smooth manages remove even eye makeup without problem well,1,1.0,1.0
 1386,hoping would good liquid vitamin c store fridge wasnt also kind gritty mixed essence use travel skin still gets worse,0,0.0,0.0
-1387,ive using week im definitely happy skin super sensitive always worry trying new product,1,1.0,0.0
+1387,ive using week im definitely happy skin super sensitive always worry trying new product,1,1.0,1.0
 1388,good lightweight moisturizer personally best one extremely sensitive skin clogged pores along moisturizing enough use tretionoin btw product cause redness bit good elbows knees lol,0,,
 1389,toner made love toners skin super hydrated winter even put lips lips chapped yet winter im 2nd bottle continue repurchase,1,,
 1390,super dry skin feels nice fact texture freaks bit received product free testing purposes influenster cosrx,0,,
@@ -1405,7 +1405,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1403,stuff amazing ive long thought double cleansing never took time find great product sister law korean ive course started learning things product smells amazing always problems dry dull skin feel like skin cleaner clearer since using also less peeling great product start,1,,
 1404,great toner starters neither drying hydrating like scent packaging also great job getting rest dirtoil face double cleansing,1,1.0,1.0
 1405,used week didnt see huge benefits like matte application serum feel somewhat sticky application,0,0.0,0.0
-1406,sensitive combinationoily skin love provides moisture skin without making greasy,1,1.0,0.0
+1406,sensitive combinationoily skin love provides moisture skin without making greasy,1,1.0,1.0
 1407,im entirely sure product delivered noticeable changes skin think helps use hormonal breakouts isnt overly drying seems help manage buildup pores,1,,
 1408,like using super moisturizing,0,,
 1409,decent impressed wouldnt purchase glad able sample,0,,
@@ -1413,20 +1413,20 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1411,lotion like watery toner feels super refreshing washing face toner hyaluronic acid amps hydration skin pat face neck follow moisturizer top absolutely must,1,,
 1412,ordered 1 pack ordered feel really penetrated acne bump convenient forgot surely buy possible get discount thanks,0,,
 1413,purchased weeks ago looking vit c product wouldnt oxidize quickly like liquid ones using powdered c oxidised tell last loooong time price amazing sensitive oily skin unfortunately oily normal quitting hormonal birth control skin apparently freaks months horrible femalesign breakouts cystic acne normal weekly bhasalicylic acid couldnt keep check one night using product blemishes significantly reduced redness gone first week hyperpigmentation breakouts started fading texture skin slightly smoother mediumdeep skin tone right nightly use two scoops soonjung toner layer mild lactic acidhyaluronic acid serum revolution skincare wow skin almost completely back normal glowwwwwy glad made product concerns lemon oil product essential oils known sensitize skin issues,0,,
-1414,gel really soothing cooling especially hot summer months doesnt smell strongly anything faint natural smell good job lightly moisturizing skin day time layer sunscreen dryskinned people need extra hydration night,1,1.0,0.0
+1414,gel really soothing cooling especially hot summer months doesnt smell strongly anything faint natural smell good job lightly moisturizing skin day time layer sunscreen dryskinned people need extra hydration night,1,1.0,1.0
 1415,oilyacnepronesensitive skin toner gentle skin irritations product leave skin feeling refreshed hydrated im satisfied product would recommend sensitive skin types,1,,
 1416,amazing product,1,,
 1417,wish came better instructions type combination better mixing powder ive two weeks still trying find balance method works best without gritty texture,0,,
 1418,far favorite truly help skin texture breakouts ever pimple ill use almost fully gone next day smell amazing amount pads get price amazing product harsh leaves skin feeling fresh tight smooth bright remember moisturize skin tend get dry continuous use,1,,
 1419,love cleanser whatever reason always afraid try charcoal face products turns cleanser one time favorites used 3x week give skin nice deep clean skin always feels clean refreshed dry tight like cleansers try stear clear ive even washed hair couple times give scalp hair good purifying wash worked awesome also need tiniest bit couple drops bottle last,1,1.0,1.0
-1420,takes makeup beautifully feels really good use permanent part routine,1,1.0,0.0
+1420,takes makeup beautifully feels really good use permanent part routine,1,1.0,1.0
 1421,ive using product daily since day received 14 days make skin feel nice immediately using however seeing difference hyperpigmentation also disappointed quantity product vs much cost,0,,
 1422,light makes face look feel silkier,1,,
 1423,leave skin oily white residue,0,,
 1424,like product much quantity bottle 20ml little,0,,
 1425,doesnt emulsify,0,0.0,0.0
 1426,originally bought go trips wouldnt time pull big bottles ended loving much use home time feels nice refreshing skin,1,,
-1427,turned one horrendous pimples nothing slightly red bump highly recommend,1,0.0,1.0
+1427,turned one horrendous pimples nothing slightly red bump highly recommend,1,0.0,0.0
 1428,love spf indian skin husband applied jaw n cheeks visible white cast sure due beard maybe improved,0,,
 1429,best best best toner ever perfect dry skin feels like lotion moisturizing ive repurchased twice plan always staple routine,1,1.0,1.0
 1430,3 teenage daughters use excellent first step able remove makeup even waterproof mascara ran months ago daughters acne kicked begged get another bottle uses acne calmed swears stuff also use moisturizing helps keep pores clean reduces pore size continue use,1,,
@@ -1434,14 +1434,14 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1432,ive using product 2 months religiously morning night havent seen difference acne scars hopeful purchasing product would least decrease discolouration since thats company advertised serum feels nice leave skin soft wasnt reason purchased disappointed,0,0.0,0.0
 1433,hydrating sensitive skin idk im finding tiger grass madacasaside cica issues aloe vera im allergic,0,,
 1434,difference yet,0,,
-1435,may need time using thus far tell major significant difference skin,1,1.0,0.0
+1435,may need time using thus far tell major significant difference skin,1,1.0,1.0
 1436,maybe skin trouble absorbing sorta sits top skin leaves eyes little tacky eyes look little better,0,0.0,0.0
 1437,love petal color balm feels great lips use little much could feel sticky otherwise feels great long lasting,1,,
 1438,love soo much best,1,,
 1439,used morning night month wrote review fairly red cheeks sometimes blotchy product harm skin also anything skin saw difference ever wouldnt say purchase though caused additional irritation might work,0,,
 1440,firstly combination skin started using product thinking would help breaks get around chin area became worst started break face white heads skin started peel like crazy using looking something help breakouts moisturize skin,0,,
 1441,bought makeupforwoc twitter goes slight cast minutes really visible love lightweight,1,,
-1442,works good get blemish,1,0.0,1.0
+1442,works good get blemish,1,0.0,0.0
 1443,excited try skin gotten dry dull recently reviews seemed supportive disappointed dont see visible brightening noticed skin visibly dry blotchy use sure seems gentle enough disappointed results could even finish half bottle skin reaction used,0,,
 1444,definitely skincare regiment permanently ive noticed skin brighter clearer week consistent use  pm pretty stoked,1,1.0,1.0
 1445,never thought oil cleanser would work since oily skin stuff amazing melts makeup even full coverage makeup leaves face feeling clean got kbeauty one fave steps,1,,
@@ -1453,7 +1453,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1451,ive never used oil cleanser one nothing compare really like especially removing makeup,1,,
 1452,use serum sister essence game changer skin dewy hydrated lines less visible like consistency like sticky gel wants get skin brighten 27 asked several times 19,1,,
 1453,favorite essence super convenient package,1,,
-1454,love love notice skin smoother well hydrated works well products worn makeup without getting reaction wear dayjust makes huge difference skin,1,1.0,0.0
+1454,love love notice skin smoother well hydrated works well products worn makeup without getting reaction wear dayjust makes huge difference skin,1,1.0,1.0
 1455,stung pretty bad skin using super short times works,0,0.0,0.0
 1456,love oil cleanser gets job done,1,1.0,1.0
 1457,good need small amount stuff go long way takes everything mascara easilytype12,1,,
@@ -1480,7 +1480,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1478,dont typically get eye creams decided splurge hydrating really helps blur lines around eyes texture really light,1,,
 1479,bought travel size product plus toner dear hydration loved wanted buy full size cream almost like water gel light left feeling hydrated sensitive dry skin perfect,1,,
 1480,full size bottle toner love set im truly surprised quickly product disappearing even using cotton pad apply considering everything toner marketed cleansing toner doesnt much even applying via pad product gentle amusingly enough test theory mine followed houttuynia cordata calming toner pad goodal extremely gentle intended specifically sensitive skin goodal toner pad one quick swipe around face using softer side longer white color one might expect toner pad especially cleansing toner pad effectively removed remaining traces dirt dead skin cells wouldnt want get eyes sure would definitely consider putting remainder small spray bottle atomizer misting face throughout day long kept eyes closed,0,,
-1481,standard compare balm cleansers ive tried feels amazing use cleans face like nothing else,1,0.0,1.0
+1481,standard compare balm cleansers ive tried feels amazing use cleans face like nothing else,1,0.0,0.0
 1482,love product suitable sensitive skin,1,,
 1483,wanted love end heavier little makeuplooking taste live hawaii need strong sun protection makeup well brightening benefits spite best efforts im getting pigmentation nose cheeks unfortunately combinationtooily skin erred oily side since moving multistep method usually ends oil slick end day since everybody makes everything moisturizing hoped onestep treatment would solve problem little makeupy heavy weather vibe maybe cityslicker mainland basically anywhere needed look polished seems like im better tinted sunblock moisturizer touch foundation pigmentation needs covered bad really things wanted rolled one,0,1.0,0.0
 1484,love sunscreen skeptical first mineral sunscreen love great planet skin hate white cast typical mineral sunscreen leaves skin hueguard totally different white cast like deepica says leaves dry sensitive skin dewywhich love recommend girlfriends especially woc,1,,
@@ -1505,7 +1505,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1503,love wont lie bit skeptical cause ive tried many moisturizer skincare products actually works pretty well,1,1.0,1.0
 1504,taking sunscreen needs dont like pillsballs youre massaging face way exfoliating products apply dry skin massage balls dont like types products everyone different though im pretty bummed really excited,0,,
 1505,given several weeks havent seen results feels gritty also added essence dissolve vit c impressed,0,,
-1506,emptied 2 jars half 3rd jar im gonna order husband also loves,1,1.0,1.0
+1506,emptied 2 jars half 3rd jar im gonna order husband also loves,1,1.0,0.0
 1507,great oil cleanser gets face nice clean leaves super smooth takes makeup including eye makeup doesnt burn eyes sensitive skin hasnt irritated repurchasing sure also big bottle last,1,1.0,1.0
 1508,saw improvements complexion starting use less hormonal chin breakouts skin get slightly drier using bad use moisturizing serumscreams fine remove makeup definitely need double cleanse,1,,
 1509,love product packaging matches aesop bottles,1,1.0,1.0
@@ -1536,8 +1536,8 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1534,one first kbeauty products ive ever bought loved much smell texture feels face cute packaging four weeks using started breakout specifically chin area bummer ive trying toners come back one results wanted work bad guess time let one go,0,,
 1535,literally risen top replace immediately run funny thing accidentally bought 2 tubes first time ordered almost returned extra soko glams super clever customer service recommended try returning deserves giant hug keep one tube home one bag,1,,
 1536,havent found acne patches better gave four stars seems help half time could using optimally overall great product especially young teens may starting skincare routine would recommend,1,0.0,0.0
-1537,received sample purchase absolutely fell love contain honey like products cautious fact might sticky loved felt lightweight still extremely moisturizing hands purchase full size left skin glowing morning,0,1.0,0.0
-1538,received advanced snail 96 mucin power essence influenster cosrx exchange honest review however first bottle product purchased essence couple years truly enjoy effect normalcombo skin use primarily part evening routine exfoliating prior moisturizer wake next day nicely hydrated skin feel little stickytacky applied moisturizer everything absorbs fully skin 1010 love stuff,1,1.0,0.0
+1537,received sample purchase absolutely fell love contain honey like products cautious fact might sticky loved felt lightweight still extremely moisturizing hands purchase full size left skin glowing morning,0,1.0,1.0
+1538,received advanced snail 96 mucin power essence influenster cosrx exchange honest review however first bottle product purchased essence couple years truly enjoy effect normalcombo skin use primarily part evening routine exfoliating prior moisturizer wake next day nicely hydrated skin feel little stickytacky applied moisturizer everything absorbs fully skin 1010 love stuff,1,1.0,1.0
 1539,dont buy skin come long way wanted try step regimen shouldve done thorough inspection ingredients buying hype highly irritating skin made break product great ingredients also quite bad ones first denatured alcohol alcohol denat awful skin many plant extracts anise lavender rose flower etc essential many skin irritants plus theres fragrance fragrance isnt skin care also irritant shame research first lesson learned,0,,
 1540,ive using month chicken skinlike bumps started appearing eyes thing happened husband,0,0.0,0.0
 1541,recently awful breakoutlikely attributed poor sleep nutrition due unstable schedule skin suffers much overnight shifts sleep terribly fortunately got schedule skin taking longer usual recover ordered acne+sebum controlling mask set one goodbye redness centella masks pack used last night woke morning much improved skin ordering 10 pack help get break control,0,,
@@ -1558,7 +1558,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1556,skin starting get better acne going away discoloration skin going away,0,,
 1557,rich creamy perfect dry winters,1,,
 1558,really excited stable version vitamin c keeping liquid versions fridge inconvenient brighten skin feel like really dried skin never dissolved completely stop using soon skin less dry,0,,
-1559,wanted love love product itt case im fan product dispenses put cotton pad gets absorbed pad put hand drips fingers gets wasted product spray mist love application face use throughout day hydration,0,1.0,1.0
+1559,wanted love love product itt case im fan product dispenses put cotton pad gets absorbed pad put hand drips fingers gets wasted product spray mist love application face use throughout day hydration,0,1.0,0.0
 1560,cream silky light fragrance minimum fresh,1,1.0,1.0
 1561,patch somewhat worked apply several time see result stick skin like velcro hard remove point painful soko patch way better,0,,
 1562,alright still searching something better,0,,
@@ -1586,7 +1586,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1584,ordered moisturizer middle winter perfect dry cold season sinus coming live humid makes oily skin really oily im getting different moisturizer im going use night,0,,
 1585,second purchase serum comparison lascorbic acid serums one good ive read complaints oxidizing fast however ive got issues two times ordered keep cap tightly closed quickly apply dropper time opening closing cap rather fast like one much tatchas vitamin c example cheaper,1,,
 1586,happy,1,,
-1587,ok cleanser pretty strong scent isnt hydrating prefer washes isnt stripping per say,0,1.0,0.0
+1587,ok cleanser pretty strong scent isnt hydrating prefer washes isnt stripping per say,0,1.0,1.0
 1588,love product cleans excess dirt wasnt able clean cleanser plus exfoliates doesnt leave skin dry buy product skin feels much cleaner use,1,,
 1589,cleanser removes makeup well gets rid dirt collected skin day use foam cleanser skin never feels dried stripped moisture started using product month ago far complaints,1,,
 1590,didnt get everything ordered honestly doesnt work,0,,
@@ -1626,7 +1626,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1624,use one scoop sensitive skin use night skin glowing morning acne scars lightened  active pimples dry stuff amaziiiing,1,,
 1625,reviews cant real spf leaves white cast like crazy skin pills dont waste money company returning product,0,,
 1626,first sunscreen love purchased multiple times dry skin product moisturizing smooth texture sunscreen also thin doesnt feel heavy face application,1,,
-1627,ive tried neogen day light protection sunscreen much prefer one formula light soft leave white cast pill combination skin tzone get little oily one left skin overall slight dewy hydrated,1,1.0,0.0
+1627,ive tried neogen day light protection sunscreen much prefer one formula light soft leave white cast pill combination skin tzone get little oily one left skin overall slight dewy hydrated,1,1.0,1.0
 1628,absolutely amazing ill buying,1,1.0,1.0
 1629,face koojs pretty clean,1,1.0,0.0
 1630,skin feels calm clean dried using cleanser love rich lather,1,,
@@ -1701,26 +1701,26 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1699,perfect combination skin ive always felt something missing routine product gave extra oomph needed clears dry patches heavy make cheeks oily,1,,
 1700,received product weeks ago far okay light blueberry scent dont like scented products might good choice also bit sticky put fully absorbed leave face feeling smooth hydrated use product night wake next morning see slight glow face course expect see immediate results since started using product routine ill update review month using product,0,,
 1701,heard good things brand looking new addition moisture routine winter months almost balm texture extremely thick melts applied sinks skin skin felt supple next morning retained moisture im looking forward continued use,0,,
-1702,really wanted love product im finally switching skincare routine stuck 3 years texture packaging nice product caused breakouts places normally dont get acne like chin cheeks occasionally try sample products bought without worrying breakouts little causes break first time skin reacted badly product im sure exactly ingredient causing,0,1.0,1.0
+1702,really wanted love product im finally switching skincare routine stuck 3 years texture packaging nice product caused breakouts places normally dont get acne like chin cheeks occasionally try sample products bought without worrying breakouts little causes break first time skin reacted badly product im sure exactly ingredient causing,0,1.0,0.0
 1703,thing would note briefly makes vision cloudy slightly burns eyes,0,,
 1704,since sensitive skin using product alone made blemish marks visible though product worked well mixed moisturizer however effects much,0,,
 1705,received two type sheet mask enature squeeze green watery sheet mask used one second night next morning face covered acne thought maybe fluke maybe something else caused saved second mask last day time acne gone thanks heavensent klairs sheet mask wary using enature mask wanted give benefit doubt woke horrible cane cheeks forehead chin best mask klairs rich moist soothing sheet mask nice experience overall,0,,
 1706,wanted love essence 5in1 11 free decent price unfortunately found leaving tad shiny face day would love left sheen skin still search holy grail essence daytime reference oily skin,0,,
 1707,received product free influenster test snail name threw tried anyway im happy used washing face really sink skin quickly leaves slight tacky feeling tack doesnt bother follow moisturizer within days feel like texture improved,1,,
 1708,using product little bit month definitely seems working however buy sunlight exposed oxygen turns yellow goes bad quickly id rather buy product niacinamide thatll thing also noticed wasnt sure vitamin c fingers serum would spill would get ready put serum face started turn orange,0,,
-1709,little goes long way like super hydrating without feeling heavy also layers well products makeup dont notice difference brightness need hydration think works really well,1,1.0,0.0
+1709,little goes long way like super hydrating without feeling heavy also layers well products makeup dont notice difference brightness need hydration think works really well,1,1.0,1.0
 1710,want something doesnt strong sunscreen smell isnt sticky wouldnt recommend,0,,
 1711,moisturizer versatile use day night greatly simplifies routine makes skin feels super soft leaves healthy sheen afterwards however smell quite citrusy keep skin hydrated long id like overall gets job done favorite moisturizer,0,1.0,1.0
 1712,really enjoyed sunscreen light feel greasy leave glow however everyone like glow look first applying white cast however seconds rubbing skin gone may well people darker skin tone feel like see white difficult blend,0,,
-1713,feels thicker oilier oil cleansers ive used doesnt rinse well odd scent feels like washing face regular canola oil,0,1.0,1.0
+1713,feels thicker oilier oil cleansers ive used doesnt rinse well odd scent feels like washing face regular canola oil,0,1.0,0.0
 1714,love concept stars placed 3 different pimples three different stages recovery slept could see worked best sad see didnt much anything except maybe take bit redness pretty much healed mark attempted ill keep trying though maybe takes 3 attempts lol,0,,
 1715,best one ever tried,1,,
 1716,terribly oily dewy time making dry patches flakey looks caked even using little extremely thick also doesnt help redness issues despite advertised primer,0,,
 1717,like packaging sunscreen pump keeps clean packaging satisfying hold like natural color sunscreen however sunscreen compared others used like elta md supergoop noticeably less easily blendable generally gives layer sunscreen doesnt feel even enough hopefully changes day otherwise like product ill probably return brands runs,0,,
-1718,using cleansing oils first step cleansing time keep trying different ones finally found favorite love consistency oil right major consideration heavy light fragrance free huge plus allows excellent massage bc perfect weight oil rinses like dream gets skin ready step two without feeling like type residue left behind think product would great skin types,1,1.0,0.0
+1718,using cleansing oils first step cleansing time keep trying different ones finally found favorite love consistency oil right major consideration heavy light fragrance free huge plus allows excellent massage bc perfect weight oil rinses like dream gets skin ready step two without feeling like type residue left behind think product would great skin types,1,1.0,1.0
 1719,first wasnt sure product made skin clearer softer,1,,
 1720,oily acne prone skin recently gotten lot worse around chin area hormonal acne toner definitely made difference really helped acne scarring love layer without feeling like im plus get much product great price definitely buy ,1,,
-1721,sample snail bee content small skin seem smoother two samples usage would probably buy full size soon,0,0.0,0.0
+1721,sample snail bee content small skin seem smoother two samples usage would probably buy full size soon,0,0.0,1.0
 1722,think good moisturizer little goes long way sometime moisturizer make skin feel little greasy bit sparing applying,1,,
 1723,seems ordinary doesnt anything time use microneedling gentle may continue buy unless find something else gentle also address skin concerns antiaging,0,,
 1724,best asian toner ive tried beats toners skii son park amorepacific hands received toner sample purchase back january ive hooked ever since feel like cleans face see face visibly brighter even hubby commented face glow couple days started using another perk toner green tea helps treat hyperpigmentation love layering different products treat hyperpigmentation hate deal aggressive still gentle skin last thing im going say found hydrating listed one benefits toner definitely tell finish wiping product face face feels clean also hydrating,1,,
@@ -1773,7 +1773,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1771,using oil cleanser awhile really enjoy consistency oilits pretty lightweight especially compared banilla co like pump lot turned one side close banilla realized didnt want scoop first stepit became cumbersome thing didnt really change blackhead situation may purchase also liked size bottle get lot think still explore options would come back one removed makeup really nicely,0,,
 1772,glow product day taught class face looking dull spray close didnt wanna waste product spraying far away skin makes glow thats mean brightness started using lets see treats hyper pigmentation dont see 19<cur tho,0,,
 1773,go bumps lol love almost translucent wearing im life saver feel coming,1,,
-1774,want love bad even tried using smallest amount cover face still leaves oily shine forehead lasts throughout day moisturizing cant get seeing forehead shine like lightbulb walk reflection,0,1.0,0.0
+1774,want love bad even tried using smallest amount cover face still leaves oily shine forehead lasts throughout day moisturizing cant get seeing forehead shine like lightbulb walk reflection,0,1.0,1.0
 1775,literally got rid pigmentation favorite toner far ive experimented quite,1,,
 1776,one favorite physical sunscreens ever using year always rotation year round goes smoothly easily leave slight white cast really see inaround eyebrows fair tinted spfs never work formula amazing im thrilled found,1,,
 1777,tried product new products mind think new cleansers dried little much see moisturizing effects serum would put felt like evaporated giving nice moisturizing feeling could due new cleansers rather lack effect serum probably try different one next time around,0,,
@@ -1792,7 +1792,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1790,color wrong aside little heavy liking,0,,
 1791,purchased bamboo charcoal  organic cotton pad variety prefer darker pads removing makeup whereas white pads would use micellarcleansing waters pads thin agree used cleansing purposes also find works well patting lightweightwatery toners essences,1,,
 1792,miracle pimple eraser help minimize,0,,
-1793,product amazing like 2 3 day using see big difference helped calm redness checks,1,1.0,0.0
+1793,product amazing like 2 3 day using see big difference helped calm redness checks,1,1.0,1.0
 1794,find cream hydrating though need extra layer moisturizer cold dry weather sticky youre using daytime suggest waiting minutes applying applying sunscreen kind add cast make sunscreen chunky use wet fingers massage face neck little goes long way apply much feel sitting face skin combination acne prone aging great find skin soft using cream one month,0,,
 1795,essence feels like dewy breath fresh air also improving texture skin yes please didnt think essence essential step skincare routine tried one dont want live without,1,,
 1796,product 2019 version ingredients different added oil im seriously allergic disappointed loved product used 2 years daily use guess hanskin wish stated somewhere updated version 2019 couldve checked ingredients purchasing,0,,
@@ -1837,7 +1837,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1835,skin amazing using pores drastically improved,1,1.0,1.0
 1836,received havent seen difference like feeling continue use,1,0.0,0.0
 1837,toner soothing enough smells like really bad bo unfortunately literally hold breath apply smell goes away seconds jarring would buy reason,0,,
-1838,tony moly moisturizer one best moisturizers game like spa container soothing softening scent green tea scent dont really mind feel like great skin types summer sunburn well good moisturizer cant go wrong 3rd moisturizer,1,1.0,0.0
+1838,tony moly moisturizer one best moisturizers game like spa container soothing softening scent green tea scent dont really mind feel like great skin types summer sunburn well good moisturizer cant go wrong 3rd moisturizer,1,1.0,1.0
 1839,love much extremely sensitive dry skin especially summer essence seriously hydrating love put go night well loveee 1010,1,,
 1840,serum works good winters moisturizer well summer serum makes face feel sticky summer use night,0,,
 1841,type12type12type12type12type12type12type12type12type12,0,,
@@ -1869,9 +1869,9 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1867,gifted serum exchange honest review serum fabulous gorgeous product steal price serum extremely lightweight beautiful slip glides smoothly across face tacky sticky feeling gives skin healthy glow leaves skin soft highly recommend gentle one best vitamin e products tried,1,,
 1868,use everyday natural looking foundation provides medium coverage effectively covers red areas surprised time seen unexpected improvements quality skin theyre kidding say good bb creams even help improve skin love product compared previous expensive foundations much effective long lasting combination skin leaning towards dry product rich doesnt make oily see ideal oily skin,1,,
 1869,use product winter time good used nightly moisturizer since double one go heavy skin feels suffocating morning rinsing skin feels really soft looks brightened overall good product great benefits,1,,
-1870,always hated wearing sunscreen sticky smelled awful always left white cast first one issues apply easily lotion leaves white cast bonus doesnt funky smell pricey definitely worth youre fellow brown girl whos trouble sun screen past,1,0.0,0.0
+1870,always hated wearing sunscreen sticky smelled awful always left white cast first one issues apply easily lotion leaves white cast bonus doesnt funky smell pricey definitely worth youre fellow brown girl whos trouble sun screen past,1,0.0,1.0
 1871,really great,1,,
-1872,could serum overall nice soothing mask stops itching irritation,1,1.0,0.0
+1872,could serum overall nice soothing mask stops itching irritation,1,1.0,1.0
 1873,love face cleanser ive always struggled occasional cystic acne help product ive less occurrences even one come takes less time go away light scent green tea refreshing use also find handy travel since stock form second purchase continue use,1,1.0,1.0
 1874,texture cream revolting stringy feels like youre smearing snot face,0,,
 1875,skeptical patches truly work always thought clear pimple needed harsh product patches really work pimple heals much faster doesnt leave scar behind also helps pick patch,1,,
@@ -1893,11 +1893,11 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1891,received product free testing purposes influenster cosrx exchange honest review really liked essence wasnt expected surprised nice felt skin would buy future,0,0.0,1.0
 1892,good,1,0.0,1.0
 1893,great exfoilater makes skin feel clean stripped,1,,
-1894,im trying best finish bottle im trying limit much im buying dread putting lotion night leaves face sticky,0,1.0,0.0
+1894,im trying best finish bottle im trying limit much im buying dread putting lotion night leaves face sticky,0,1.0,1.0
 1895,wasnt package idea good would give zero stars thats option zero product,0,0.0,0.0
 1896,started using curated doesnt pill great layering wearing alone doesnt irritate used touchup throughout day underneath spf love tube design holy grail product sure,1,,
 1897,shampoo life saver gentle sensitive scalp hydrates fragrance feels clean,1,,
-1898,doesnt irritate skin dont necessarily see change using nice product put moisturizer think could live without,0,1.0,1.0
+1898,doesnt irritate skin dont necessarily see change using nice product put moisturizer think could live without,0,1.0,0.0
 1899,received product try absolutely fell love love texture way makes face feel soft size highly recommend try product see,1,,
 1900,skin didnt really change struggle taking size kinda small,0,,
 1901,product brightens evens skin complexion without heavy sticky texture use night saw results fairly quickly,1,0.0,1.0
@@ -1913,7 +1913,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1911,order sitting somewhere two weeks ive told keep waiting long supposed wait 1 month longer never order company steal money probably never send product need save product influencers actually send,0,,
 1912,ive recently started serious skin regimen using part enjoy lot definitely noted difference skin texture made huge difference skins condition,1,,
 1913,convenience stick nice traveling doesnt apply liquid limits even camping used mine camping trip perfect green tea really gentle skin helped balance oily tzone good usual cleansing routine definitely super convenient camping travel,1,1.0,1.0
-1914,purchased use toning cream love ampoule didnt seem make difference skin,0,1.0,1.0
+1914,purchased use toning cream love ampoule didnt seem make difference skin,0,1.0,0.0
 1915,cream become time favorite moisturizer used soooo many high end ones talking like cur>120 5 oz jar always equated quality effectiveness cur honestly korean skincare really changed perspective hands effective moisturizer ive used continued purchase past year see end dry skin thats prone acne play moisturizer game quite safe also factor fact im allergic almost anything put skin im living dream product causes zero acne pore clogging reactions redness irritationburning use cosdnacom check ingredients safe every aspect dry skin drinks unlike reviewers use day winter well night theres thing using much least little go long way love feels slather definitely lemony scent dont find putting smell artificial enjoy packaging standard tub dont mind quite honestly like use every drop alls say give shot great cream price far skin 8564 others ive tried lol,1,,
 1916,good job cleaning face smell cant good skin smells like perfume,0,,
 1917,ive using months skin never looked felt better stuff like magic bottle,1,,
@@ -1921,7 +1921,7 @@ Unnamed: 0,Review,flair_labels,Logistic Regression Predictions,Random Forest Pre
 1919,makes feel like im putting whole new mask skin cells face moisturizing makes skin feel stronger consistency feel look weird worth,1,,
 1920,foam perfectly soothes skin right washing hole day skin looked less red acne seems less irritated face doesnt fell tight,1,,
 1921,really enjoy serum arrives packaged well clear cap covers dispenser serum works great neogen essence would highly recommend adding skin routine complaint serum little thick takes bit completely absorb skin enjoyed every aspect serum highly recommended,1,,
-1922,love serum little goes long way feels great skin using couple months see much brighter complexion dry sensitive skin havent irrigation product,1,1.0,1.0
+1922,love serum little goes long way feels great skin using couple months see much brighter complexion dry sensitive skin havent irrigation product,1,1.0,0.0
 1923,didnt see difference skin thing made break,0,,
 1924,since starting certain medication trouble finding good skincare products dont make breakout irritate skin moisturizer however gives good hydration without feeling like sticky extra layer skin feels better less irritated using week far look forward seeing results also love scent,1,,
 1925,cute im picker really stayed night could visibly see drawn liquid open blemish blemish flatter healed quicker normal case sturdy packaging fun,1,1.0,0.0
