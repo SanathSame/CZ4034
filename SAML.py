@@ -45,5 +45,32 @@ data.loc[X_test.index, 'Random Forest Predictions'] = rf_predictions
 rf_accuracy = accuracy_score(y_test, rf_predictions)
 print(f'Random Forest Accuracy: {rf_accuracy:.2f}')
 
+# Train the decision tree model
+clf = DecisionTreeClassifier()
+clf_model.fit(X_train_vectorized, y_train)
+
+# Predict the sentiment for the test data using decision tree
+clf_predictions = clf_model.predict(X_test_vectorized)
+
+# Write the decision tree predictions to Column F of the test data
+data.loc[X_test.index, 'Decision Tree Predictions'] = clf_predictions
+
+# Calculate and display the accuracy of the decision tree model
+clf_accuracy = accuracy_score(y_test, clf_predictions)
+print(f'Decision Tree Accuracy: {clf_accuracy:.2f}')
+
+# Train the decision tree model
+clf = DecisionTreeClassifier()
+clf_model.fit(X_train_vectorized, y_train)
+
+# Predict the sentiment for the test data using multinomial naive bayes
+mnb_predictions = mnb_model.predict(X_test_vectorized)
+
+# Write the multinomial naive bayes predictions to Column G of the test data
+data.loc[X_test.index, 'Multinomial Naive Bayes Predictions'] = mnb_predictions
+
+# Calculate and display the accuracy of the multinomial naive bayes model
+mnb_accuracy = accuracy_score(y_test, mnb_predictions)
+print(f'Multinomial Naive Bayes Accuracy: {clf_accuracy:.2f}')
 # Save the updated data to a new file
 data.to_csv('balanced_data_with_predictions.csv', index=False)
