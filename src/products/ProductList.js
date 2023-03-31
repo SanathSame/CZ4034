@@ -1,10 +1,14 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import Product from "./Product";
 import ProductH from "./ProductH";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ScrollToTopOnMount from "../template/ScrollToTopOnMount";
+import Slider from "@mui/material/Slider";
 
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 const categories = [
   "All Products",
   "Phones & Tablets",
@@ -16,9 +20,30 @@ const categories = [
 
 const skin_type = ["Combination","Dry","Normal","Oily"];
 
-const skin_concern = ["Acne","Anti-agin/Wrinkles", "Dryness/Hydration","Oil Control/Pores","Pigmentation", "Redness", "Sensitive"];
+const skin_concern = ["Acne","Anti-aging/Wrinkles", "Dryness/Hydration","Oil Control/Pores","Pigmentation", "Redness", "Sensitive"];
 
 function FilterMenuLeft() {
+  const [range, setRange] = React.useState([1, 95]);
+
+  const muiTheme = createMuiTheme({
+    overrides:{
+      MuiSlider: {
+        thumb:{
+        color: "white",
+        },
+        track: {
+          color: 'white'
+        },
+        rail: {
+          color: 'black'
+        }
+      }
+  }
+  });
+
+  function handleChanges(event, newValue) {
+    setRange(newValue);
+ }
   return (
     <ul className="list-group list-group-flush rounded">
       <li className="list-group-item d-none d-lg-block">
@@ -72,11 +97,12 @@ function FilterMenuLeft() {
         <h5 className="mt-1 mb-2">Price Range</h5>
         <div className="d-grid d-block mb-3">
           <div className="form-floating mb-2">
+          <Slider value = {range} onChange = {handleChanges} valueLabelDisplay="auto"/>
             <input
               type="text"
               className="form-control"
               placeholder="Min"
-              defaultValue="100000"
+              defaultValue="1"
             />
             <label htmlFor="floatingInput">Min Price</label>
           </div>
@@ -85,7 +111,7 @@ function FilterMenuLeft() {
               type="text"
               className="form-control"
               placeholder="Max"
-              defaultValue="500000"
+              defaultValue="95"
             />
             <label htmlFor="floatingInput">Max Price</label>
           </div>
@@ -237,19 +263,19 @@ function ProductList() {
               <span className="text-muted small d-none d-md-inline">
                 Showing 10 of 100
               </span>
-              <nav aria-label="Page navigation example" className="ms-auto">
+              {/* <nav aria-label="Page navigation example" className="ms-auto">
                 <ul className="pagination my-0">
                   <li className="page-item">
                     <a className="page-link" href="!#">
                       Previous
                     </a>
                   </li>
-                  <li className="page-item">
-                    <a className="page-link" href="!#">
+                  <li className="page-item active">
+                    <a className="page-link" href="/products">
                       1
                     </a>
                   </li>
-                  <li className="page-item active">
+                  <li className="page-item">
                     <a className="page-link" href="!#">
                       2
                     </a>
@@ -265,7 +291,7 @@ function ProductList() {
                     </a>
                   </li>
                 </ul>
-              </nav>
+              </nav> */}
             </div>
           </div>
         </div>

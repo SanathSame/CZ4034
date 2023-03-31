@@ -166,13 +166,13 @@ function ProductDetail() {
         <div className="col-md-12 mb-4">
           <hr />
           <h4 className="text-muted my-4">Related products</h4>
-          <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+          {/* <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
             {Array.from({ length: 4 }, (_, i) => {
               return (
                 <RelatedProduct key={i} percentOff={i % 2 === 0 ? 15 : null} />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
