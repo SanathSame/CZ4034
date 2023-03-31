@@ -1,12 +1,21 @@
 import Image from "../../nillkin-case-1.jpg";
-import RelatedProduct from "./RelatedProduct";
 import Ratings from "react-ratings-declarative";
 import { Link } from "react-router-dom";
 import ScrollToTopOnMount from "../../template/ScrollToTopOnMount";
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material/styles';
+
 
 const iconPath =
   "M18.571 7.221c0 0.201-0.145 0.391-0.29 0.536l-4.051 3.951 0.96 5.58c0.011 0.078 0.011 0.145 0.011 0.223 0 0.29-0.134 0.558-0.458 0.558-0.156 0-0.313-0.056-0.446-0.134l-5.011-2.634-5.011 2.634c-0.145 0.078-0.29 0.134-0.446 0.134-0.324 0-0.469-0.268-0.469-0.558 0-0.078 0.011-0.145 0.022-0.223l0.96-5.58-4.063-3.951c-0.134-0.145-0.279-0.335-0.279-0.536 0-0.335 0.346-0.469 0.625-0.513l5.603-0.815 2.511-5.078c0.1-0.212 0.29-0.458 0.547-0.458s0.446 0.246 0.547 0.458l2.511 5.078 5.603 0.815c0.268 0.045 0.625 0.179 0.625 0.513z";
-
+  const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
 function ProductDetail() {
   function changeRating(newRating) {}
 
@@ -17,23 +26,23 @@ function ProductDetail() {
         <ol className="breadcrumb p-3">
           <li className="breadcrumb-item">
             <Link className="text-decoration-none link-secondary" to="/products">
-              All Prodcuts
+              All Products
             </Link>
           </li>
           <li className="breadcrumb-item">
             <a className="text-decoration-none link-secondary" href="!#">
-              Cases &amp; Covers
+              
             </a>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
-            Nillkin iPhone X cover
+            Hermes
           </li>
         </ol>
       </nav>
       <div className="row mb-4">
         <div className="d-none d-lg-block col-lg-1">
           <div className="image-vertical-scroller">
-            <div className="d-flex flex-column">
+            {/* <div className="d-flex flex-column">
               {Array.from({ length: 10 }, (_, i) => {
                 let selected = i !== 1 ? "opacity-6" : "";
                 return (
@@ -46,7 +55,7 @@ function ProductDetail() {
                   </a>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col-lg-6">
@@ -92,11 +101,11 @@ function ProductDetail() {
             <div className="row g-3 mb-4">
               <div className="col">
                 <button className="btn btn-outline-dark py-2 w-100">
-                  Add to cart
+                  Positive
                 </button>
               </div>
               <div className="col">
-                <button className="btn btn-dark py-2 w-100">Buy now</button>
+                <button className="btn btn-dark py-2 w-100">Negative</button>
               </div>
             </div>
 
@@ -143,37 +152,28 @@ function ProductDetail() {
                 </Ratings>
               </dd>
             </dl>
-
-            <h4 className="mb-0">Description</h4>
-            <hr />
-            <p className="lead flex-shrink-0">
-              <small>
-                Nature (TPU case) use environmental non-toxic TPU, silky smooth
-                and ultrathin. Glittering and translucent, arbitrary rue
-                reserved volume button cutouts, easy to operate. Side frosted
-                texture anti-slipping, details show its concern; transparent
-                frosted logo shows its taste. The release of self, the flavor of
-                life. Nillkin launched Nature transparent soft cover, only to
-                retain the original phone style. Subverting tradition,
-                redefinition. Thinner design Environmental texture better hand
-                feeling.
-              </small>
-            </p>
           </div>
         </div>
       </div>
-
       <div className="row">
         <div className="col-md-12 mb-4">
-          <hr />
-          <h4 className="text-muted my-4">Related products</h4>
-          <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
-            {Array.from({ length: 4 }, (_, i) => {
-              return (
-                <RelatedProduct key={i} percentOff={i % 2 === 0 ? 15 : null} />
-              );
-            })}
-          </div>
+          <h4 className="mb-0">Description</h4>
+            <hr />
+            <p className="lead flex-shrink-0">
+              <small>
+                Reviews classified by the RoBERTa Model.
+              </small>
+              //write a for loop for repeating the same element in React?
+              
+            <Grid container spacing={2}>
+              <Grid item xs={10}>
+              <Item>xs=10</Item>
+              </Grid>
+              <Grid item xs={2}>
+                <Item>xs=2</Item>
+              </Grid>
+            </Grid>
+            </p>
         </div>
       </div>
     </div>
