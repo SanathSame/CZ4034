@@ -33,7 +33,7 @@ For screenshot demo of the UI, refer to the Assignment Report
 
 ```
 cd frontend/my-app/
-npm install .
+npm install .W
 npm start
 ```
 

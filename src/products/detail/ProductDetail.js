@@ -1,4 +1,4 @@
-import Image from "../../nillkin-case-1.jpg";
+import Image from "../hermes.jpg";
 import Ratings from "react-ratings-declarative";
 import { Link } from "react-router-dom";
 import ScrollToTopOnMount from "../../template/ScrollToTopOnMount";
@@ -95,7 +95,7 @@ function ProductDetail() {
 
         <div className="col-lg-5">
           <div className="d-flex flex-column h-100">
-            <h2 className="mb-1">Nillkin iPhone X cover</h2>
+            <h2 className="mb-1">Hermes</h2>
             <h4 className="text-muted mb-4">10000 Ks</h4>
 
             <div className="row g-3 mb-4">
@@ -112,23 +112,12 @@ function ProductDetail() {
             <h4 className="mb-0">Details</h4>
             <hr />
             <dl className="row">
-              <dt className="col-sm-4">Code</dt>
-              <dd className="col-sm-8 mb-3">C0001</dd>
 
               <dt className="col-sm-4">Category</dt>
-              <dd className="col-sm-8 mb-3">Cases & Covers</dd>
+              <dd className="col-sm-8 mb-3"> Complexion Balm</dd>
 
               <dt className="col-sm-4">Brand</dt>
-              <dd className="col-sm-8 mb-3">iPhone X</dd>
-
-              <dt className="col-sm-4">Manufacturer</dt>
-              <dd className="col-sm-8 mb-3">Nillkin</dd>
-
-              <dt className="col-sm-4">Color</dt>
-              <dd className="col-sm-8 mb-3">Red, Green, Blue, Pink</dd>
-
-              <dt className="col-sm-4">Status</dt>
-              <dd className="col-sm-8 mb-3">Instock</dd>
+              <dd className="col-sm-8 mb-3">Hermes</dd>
 
               <dt className="col-sm-4">Rating</dt>
               <dd className="col-sm-8 mb-3">
@@ -162,9 +151,7 @@ function ProductDetail() {
             <p className="lead flex-shrink-0">
               <small>
                 Reviews classified by the RoBERTa Model.
-              </small>
-              //write a for loop for repeating the same element in React?
-              
+              </small>              
             <Grid container spacing={2}>
               <Grid item xs={10}>
               <Item>xs=10</Item>

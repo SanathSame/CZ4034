@@ -7,15 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ScrollToTopOnMount from "../template/ScrollToTopOnMount";
 import Slider from "@mui/material/Slider";
 
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
 const categories = [
-  "All Products",
-  "Phones & Tablets",
-  "Cases & Covers",
-  "Screen Guards",
-  "Cables & Chargers",
-  "Power Banks",
+"Sun Protection",
+"Toner",
+"Oil Cleanser",
+"Moisturizer",
+"Makeup",
+"Serum/Ampoule"
 ];
 
 const skin_type = ["Combination","Dry","Normal","Oily"];
@@ -25,21 +23,6 @@ const skin_concern = ["Acne","Anti-aging/Wrinkles", "Dryness/Hydration","Oil Con
 function FilterMenuLeft() {
   const [range, setRange] = React.useState([1, 95]);
 
-  const muiTheme = createMuiTheme({
-    overrides:{
-      MuiSlider: {
-        thumb:{
-        color: "white",
-        },
-        track: {
-          color: 'white'
-        },
-        rail: {
-          color: 'black'
-        }
-      }
-  }
-  });
 
   function handleChanges(event, newValue) {
     setRange(newValue);
@@ -96,28 +79,10 @@ function FilterMenuLeft() {
       <li className="list-group-item">
         <h5 className="mt-1 mb-2">Price Range</h5>
         <div className="d-grid d-block mb-3">
-          <div className="form-floating mb-2">
           <Slider value = {range} onChange = {handleChanges} valueLabelDisplay="auto"/>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Min"
-              defaultValue="1"
-            />
-            <label htmlFor="floatingInput">Min Price</label>
-          </div>
-          <div className="form-floating mb-2">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Max"
-              defaultValue="95"
-            />
-            <label htmlFor="floatingInput">Max Price</label>
-          </div>
-          <button className="btn btn-dark">Apply</button>
         </div>
       </li>
+      <button className="btn btn-dark">Apply</button>
     </ul>
   );
 }
@@ -125,11 +90,11 @@ function FilterMenuLeft() {
 function ProductList() {
   const [viewType, setViewType] = useState({ grid: true });
 
-  function changeViewType() {
-    setViewType({
-      grid: !viewType.grid,
-    });
-  }
+  // function changeViewType() {
+  //   setViewType({
+  //     grid: !viewType.grid,
+  //   });
+  // }
 
   return (
     <div className="container mt-5 py-4 px-xl-5">
@@ -140,13 +105,9 @@ function ProductList() {
             <Link
               className="text-decoration-none link-secondary"
               to="/products"
-              replace
-            >
+              replace>
               All Products
             </Link>
-          </li>
-          <li className="breadcrumb-item active" aria-current="page">
-            Cases &amp; Covers
           </li>
         </ol>
       </nav>
@@ -214,10 +175,18 @@ function ProductList() {
                   aria-label="Default select example"
                   defaultValue=""
                 >
-                  <option value="">All Models</option>
-                  <option value="1">Burn</option>
-                  <option value="2">Barn</option>
-                  <option value="3">Brad</option>
+                  <option value="">All Brands</option>
+                  <option value="1">NEOGEN</option>
+                  <option value="2">COSRX</option>
+                  <option value="3">BENTON</option>
+                  <option value="4">BENTON</option>
+                  <option value="5">BENTON</option>
+                  <option value="6">BENTON</option>
+                  <option value="7">BENTON</option>
+                  <option value="8">BENTON</option>
+                  <option value="9">BENTON</option>
+                  <option value="10">BENTON</option>
+
                 </select>
               </div>
               <div className="col-lg-9 col-xl-5 offset-xl-4 d-flex flex-row">
@@ -232,14 +201,14 @@ function ProductList() {
                     <FontAwesomeIcon icon={["fas", "search"]} />
                   </button>
                 </div>
-                <button
+                {/* <button
                   className="btn btn-outline-dark ms-2 d-none d-lg-inline"
                   onClick={changeViewType}
                 >
                   <FontAwesomeIcon
                     icon={["fas", viewType.grid ? "th-list" : "th-large"]}
                   />
-                </button>
+                </button> */}
               </div>
             </div>
             <div
