@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Product from "./Product";
-import ProductH from "./ProductH";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ScrollToTopOnMount from "../template/ScrollToTopOnMount";
 import Slider from "@mui/material/Slider";
+import { useEffect } from "react";
 
 const categories = [
-"Sun Protection",
-"Toner",
-"Oil Cleanser",
-"Moisturizer",
-"Makeup",
-"Serum/Ampoule"
+  "Sun Protection",
+  "Toner",
+  "Oil Cleanser",
+  "Moisturizer",
+  "Makeup",
+  "Serum/Ampoule"
 ];
 
-const skin_type = ["Combination","Dry","Normal","Oily"];
+const skin_type = ["Combination", "Dry", "Normal", "Oily"];
 
-const skin_concern = ["Acne","Anti-aging/Wrinkles", "Dryness/Hydration","Oil Control/Pores","Pigmentation", "Redness", "Sensitive"];
+const skin_concern = ["Acne", "Anti-aging/Wrinkles", "Dryness/Hydration", "Oil Control/Pores", "Pigmentation", "Redness", "Sensitive"];
 
 function FilterMenuLeft() {
   const [range, setRange] = React.useState([1, 95]);
@@ -26,7 +26,7 @@ function FilterMenuLeft() {
 
   function handleChanges(event, newValue) {
     setRange(newValue);
- }
+  }
   return (
     <ul className="list-group list-group-flush rounded">
       <li className="list-group-item d-none d-lg-block">
@@ -79,7 +79,7 @@ function FilterMenuLeft() {
       <li className="list-group-item">
         <h5 className="mt-1 mb-2">Price Range</h5>
         <div className="d-grid d-block mb-3">
-          <Slider value = {range} onChange = {handleChanges} valueLabelDisplay="auto"/>
+          <Slider value={range} onChange={handleChanges} valueLabelDisplay="auto" />
         </div>
       </li>
       <button className="btn btn-dark">Apply</button>
@@ -87,14 +87,32 @@ function FilterMenuLeft() {
   );
 }
 
-function ProductList() {
-  const [viewType, setViewType] = useState({ grid: true });
 
-  // function changeViewType() {
-  //   setViewType({
-  //     grid: !viewType.grid,
-  //   });
-  // }
+function ProductList() {
+  const [searchTerm, setsearchTerm] = useState('');
+  const [products, setproducts] = useState([]);
+
+  useEffect(() => {
+    handleSearch()
+  }, [])
+  const handleChange = event => {
+    setsearchTerm(event.target.value);
+
+    console.log('value is:', event.target.value);
+  };
+  async function handleSearch() {
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+
+    await fetch("http://localhost:8983/solr/info/select?indent=true&q.op=OR&q=*%3A*&useParams=", requestOptions)
+      .then(response => response.json())
+      .then(data => setproducts(data.response.docs))
+      .catch(error => console.log('error', error));
+  }
+  console.log("Products value", products);
+
 
   return (
     <div className="container mt-5 py-4 px-xl-5">
@@ -196,8 +214,10 @@ function ProductList() {
                     type="text"
                     placeholder="Search products..."
                     aria-label="search input"
+                    value={searchTerm}
+                    onChange={handleChange}
                   />
-                  <button className="btn btn-outline-dark">
+                  <button className="btn btn-outline-dark" onClick={handleSearch}>
                     <FontAwesomeIcon icon={["fas", "search"]} />
                   </button>
                 </div>
@@ -214,23 +234,16 @@ function ProductList() {
             <div
               className={
                 "row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3 mb-4 flex-shrink-0 " +
-                (viewType.grid ? "row-cols-xl-3" : "row-cols-xl-2")
+                "row-cols-xl-3"
               }
             >
-              {Array.from({ length: 10 }, (_, i) => {
-                if (viewType.grid) {
-                  return (
-                    <Product key={i} percentOff={i % 2 === 0 ? 15 : null} />
-                  );
-                }
-                return (
-                  <ProductH key={i} percentOff={i % 4 === 0 ? 15 : null} />
-                );
-              })}
+              {products.map(product => (
+                <Product key={product.product_ID} Img_link={product.Img_link} name={product.product_name} price={product.price} brand={product.product_brand} desc={product.product_description} />
+              ))}
             </div>
             <div className="d-flex align-items-center mt-auto">
               <span className="text-muted small d-none d-md-inline">
-                Showing 10 of 100
+                Out of 553 possible products
               </span>
               {/* <nav aria-label="Page navigation example" className="ms-auto">
                 <ul className="pagination my-0">
