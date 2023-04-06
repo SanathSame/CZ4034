@@ -5,10 +5,16 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
+from joblib import dump
+from transformers import BertTokenizer, TFBertForSequenceClassification, RobertaTokenizer, TFRobertaForSequenceClassification
+import tensorflow as tf
+
 
 # Load data
-data = pd.read_csv('balanced_data.csv')
+data = pd.read_csv('final_dataset.csv')
 
 # Split data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(
@@ -47,32 +53,97 @@ data.loc[X_test.index, 'Random Forest Predictions'] = rf_predictions
 rf_accuracy = accuracy_score(y_test, rf_predictions)
 print(f'Random Forest Accuracy: {rf_accuracy:.2f}')
 
-# Train the decision tree model
-clf = DecisionTreeClassifier()
-clf_model.fit(X_train_vectorized, y_train)
+# Train the Multinomial Naive Bayes model
+mnb = MultinomialNB()
+mnb.fit(X_train_vectorized, y_train)
 
-# Predict the sentiment for the test data using decision tree
-clf_predictions = clf_model.predict(X_test_vectorized)
+# Predict the sentiment for the test data using Multinomial Naive Bayes
+mnb_predictions = mnb.predict(X_test_vectorized)
 
-# Write the decision tree predictions to Column F of the test data
-data.loc[X_test.index, 'Decision Tree Predictions'] = clf_predictions
-
-# Calculate and display the accuracy of the decision tree model
-clf_accuracy = accuracy_score(y_test, clf_predictions)
-print(f'Decision Tree Accuracy: {clf_accuracy:.2f}')
-
-# Train the decision tree model
-clf = DecisionTreeClassifier()
-clf_model.fit(X_train_vectorized, y_train)
-
-# Predict the sentiment for the test data using multinomial naive bayes
-mnb_predictions = mnb_model.predict(X_test_vectorized)
-
-# Write the multinomial naive bayes predictions to Column G of the test data
+# Write the Multinomial Naive Bayes predictions to Column G of the test data
 data.loc[X_test.index, 'Multinomial Naive Bayes Predictions'] = mnb_predictions
 
-# Calculate and display the accuracy of the multinomial naive bayes model
+# Calculate and display the accuracy of the Multinomial Naive Bayes model
 mnb_accuracy = accuracy_score(y_test, mnb_predictions)
-print(f'Multinomial Naive Bayes Accuracy: {clf_accuracy:.2f}')
+print(f'Multinomial Naive Bayes Accuracy: {mnb_accuracy:.2f}')
+
+# Load the pre-trained BERT tokenizer and model
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+bert_model = TFBertForSequenceClassification.from_pretrained(
+    'bert-base-uncased')
+
+# Tokenize the training and test data
+train_encodings = tokenizer(X_train.tolist(), truncation=True, padding=True)
+test_encodings = tokenizer(X_test.tolist(), truncation=True, padding=True)
+
+
+# Convert the tokenized data into a TensorFlow dataset
+train_dataset = tf.data.Dataset.from_tensor_slices((
+    dict(train_encodings),
+    y_train
+))
+test_dataset = tf.data.Dataset.from_tensor_slices((
+    dict(test_encodings),
+    y_test
+))
+
+# Fine-tune the BERT model on the training data
+bert_model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=3e-5),
+                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
+bert_model.fit(train_dataset.shuffle(1000).batch(16), epochs=3, batch_size=16)
+
+# Predict the sentiment for the test data using BERT
+bert_predictions = bert_model.predict(
+    test_dataset.batch(16)).logits.argmax(axis=-1)
+
+# Write the BERT predictions to Column H of the test data
+data.loc[X_test.index, 'BERT Predictions'] = bert_predictions
+
+# Calculate and display the accuracy of the BERT model
+bert_accuracy = accuracy_score(y_test, bert_predictions)
+print(f'BERT Accuracy: {bert_accuracy:.2f}')
+
+# Save the fine-tuned BERT model
+bert_model.save_pretrained('BERT_model')
+
+# Load the pre-trained RoBERTa tokenizer and model
+tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+roberta_model = TFRobertaForSequenceClassification.from_pretrained(
+    'roberta-base')
+
+# Tokenize the training and test data
+train_encodings = tokenizer(X_train.tolist(), truncation=True, padding=True)
+test_encodings = tokenizer(X_test.tolist(), truncation=True, padding=True)
+
+# Convert the tokenized data into a TensorFlow dataset
+train_dataset = tf.data.Dataset.from_tensor_slices((
+    dict(train_encodings),
+    y_train
+))
+test_dataset = tf.data.Dataset.from_tensor_slices((
+    dict(test_encodings),
+    y_test
+))
+
+# Fine-tune the RoBERTa model on the training data
+roberta_model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=3e-5),
+                      loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
+roberta_model.fit(train_dataset.shuffle(
+    1000).batch(16), epochs=3, batch_size=16)
+
+# Predict the sentiment for the test data using RoBERTa
+roberta_predictions = roberta_model.predict(
+    test_dataset.batch(16)).logits.argmax(axis=-1)
+
+# Write the RoBERTa predictions to Column I of the test data
+data.loc[X_test.index, 'RoBERTa Predictions'] = roberta_predictions
+
+# Calculate and display the accuracy of the RoBERTa model
+roberta_accuracy = accuracy_score(y_test, roberta_predictions)
+print(f'RoBERTa Accuracy: {roberta_accuracy:.2f}')
+
+# Save the fine-tuned RoBERTa model
+roberta_model.save_pretrained('RoBERTa_prediction_model')
+
 # Save the updated data to a new file
-data.to_csv('balanced_data_with_predictions.csv', index=False)
+data.to_csv('final_dataset_with_predictions.csv', index=False)
