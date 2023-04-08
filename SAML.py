@@ -7,7 +7,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, classification_report
 import matplotlib.pyplot as plt
 from joblib import dump
 from transformers import BertTokenizer, TFBertForSequenceClassification, RobertaTokenizer, TFRobertaForSequenceClassification
@@ -40,17 +40,9 @@ data.loc[X_test.index, 'Logistic Regression Predictions'] = lr_predictions
 lr_accuracy = accuracy_score(y_test, lr_predictions)
 print(f'Logistic Regression Accuracy: {lr_accuracy:.2f}')
 
-# Plotting loss and accuracy curves for training and test accuracy
-plt.figure(figsize=(10, 5))
-plt.plot(lr_model.loss_curve_)
-plt.plot(lr_model.score(X_train_vectorized, y_train))
-plt.plot(lr_model.score(X_test_vectorized, y_test))
-plt.title('Loss/Accuracy curve for Logistic Regression')
-plt.ylabel('Loss/Accuracy')
-plt.xlabel('Epoch')
-plt.legend(['Training Loss', 'Training Accuracy',
-           'Test Accuracy'], loc='upper right')
-plt.savefig('LR_loss_accuracy_curve.png')
+# Display the classification report for the Logistic Regression model
+print('Logistic Regression Classification Report:')
+print(classification_report(y_test, lr_predictions))
 
 # Train the random forest model
 rf_model = RandomForestClassifier()
@@ -67,15 +59,10 @@ data.loc[X_test.index, 'Random Forest Predictions'] = rf_predictions
 rf_accuracy = accuracy_score(y_test, rf_predictions)
 print(f'Random Forest Accuracy: {rf_accuracy:.2f}')
 
-# Plotting loss and accuracy curves for training and test accuracy
-plt.figure(figsize=(10, 5))
-plt.plot(rf_model.score(X_train_vectorized, y_train))
-plt.plot(rf_model.score(X_test_vectorized, y_test))
-plt.title('Accuracy curve for Random Forest')
-plt.ylabel('Accuracy')
-plt.xlabel('Epoch')
-plt.legend(['Training Accuracy', 'Test Accuracy'], loc='upper right')
-plt.savefig('rf_accuracy_curve.png')
+# Display the classification report for the Random Forest model
+print('Random Forest Classification Report:')
+print(classification_report(y_test, rf_predictions))
+
 
 # Train the Multinomial Naive Bayes model
 mnb = MultinomialNB()
@@ -90,6 +77,10 @@ data.loc[X_test.index, 'Multinomial Naive Bayes Predictions'] = mnb_predictions
 # Calculate and display the accuracy of the Multinomial Naive Bayes model
 mnb_accuracy = accuracy_score(y_test, mnb_predictions)
 print(f'Multinomial Naive Bayes Accuracy: {mnb_accuracy:.2f}')
+
+# Display the classification report for the MNB model
+print('RoBERTa Classification Report:')
+print(classification_report(y_test, mnb_predictions))
 
 # Load the pre-trained BERT tokenizer and model
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
@@ -113,8 +104,10 @@ test_dataset = tf.data.Dataset.from_tensor_slices((
 # Fine-tune the BERT model on the training data
 bert_model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=3e-5),
                    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
-history = bert_model.fit(train_dataset.shuffle(
-    1000).batch(16), epochs=3, batch_size=16)
+history = bert_model.fit(train_dataset.shuffle(1000).batch(16),
+                         validation_data=test_dataset.batch(16),
+                         epochs=3,
+                         batch_size=16)
 
 # Predict the sentiment for the test data using BERT
 bert_predictions = bert_model.predict(
@@ -130,15 +123,22 @@ print(f'BERT Accuracy: {bert_accuracy:.2f}')
 # Plotting loss and accuracy curves for training and test accuracy
 plt.figure(figsize=(10, 5))
 plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
 plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
 plt.title('Loss/Accuracy curve for BERT')
 plt.ylabel('Loss/Accuracy')
 plt.xlabel('Epoch')
-plt.legend(['Training Loss', 'Training Accuracy'], loc='upper right')
+plt.legend(['Training Loss', 'Test Loss', 'Training Accuracy',
+           'Test Accuracy'], loc='upper right')
 plt.savefig('bert_loss_accuracy_curve.png')
 
-# Save the fine-tuned BERT model
-bert_model.save_pretrained('BERT_model')
+# Display the classification report for the BERT model
+print('BERT Classification Report:')
+print(classification_report(y_test, bert_predictions))
+
+# #Save the fine-tuned BERT model
+# bert_model.save_pretrained('BERT_model')
 
 # Load the pre-trained RoBERTa tokenizer and model
 tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
@@ -162,8 +162,11 @@ test_dataset = tf.data.Dataset.from_tensor_slices((
 # Fine-tune the RoBERTa model on the training data
 roberta_model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=3e-5),
                       loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
-history = roberta_model.fit(train_dataset.shuffle(
-    1000).batch(16), epochs=3, batch_size=16)
+
+history = roberta_model.fit(train_dataset.shuffle(1000).batch(16),
+                            validation_data=test_dataset.batch(16),
+                            epochs=3,
+                            batch_size=16)
 
 # Predict the sentiment for the test data using RoBERTa
 roberta_predictions = roberta_model.predict(
@@ -176,18 +179,25 @@ data.loc[X_test.index, 'RoBERTa Predictions'] = roberta_predictions
 roberta_accuracy = accuracy_score(y_test, roberta_predictions)
 print(f'RoBERTa Accuracy: {roberta_accuracy:.2f}')
 
+# Display the classification report for the RoBERTa model
+print('RoBERTa Classification Report:')
+print(classification_report(y_test, roberta_predictions))
+
 # Plotting loss and accuracy curves for training and test accuracy
 plt.figure(figsize=(10, 5))
 plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
 plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
 plt.title('Loss/Accuracy curve for RoBERTa')
 plt.ylabel('Loss/Accuracy')
 plt.xlabel('Epoch')
-plt.legend(['Training Loss', 'Training Accuracy'], loc='upper right')
+plt.legend(['Training Loss', 'Test Loss', 'Training Accuracy',
+           'Test Accuracy'], loc='upper right')
 plt.savefig('roberta_loss_accuracy_curve.png')
 
 # Save the fine-tuned RoBERTa model
-roberta_model.save_pretrained('RoBERTa_prediction_model')
+roberta_model.save_pretrained('RoBERTa_model')
 
 # Save the updated data to a new file
 data.to_csv('final_dataset_with_predictions.csv', index=False)
