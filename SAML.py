@@ -79,7 +79,7 @@ mnb_accuracy = accuracy_score(y_test, mnb_predictions)
 print(f'Multinomial Naive Bayes Accuracy: {mnb_accuracy:.2f}')
 
 # Display the classification report for the MNB model
-print('RoBERTa Classification Report:')
+print('MNB Classification Report:')
 print(classification_report(y_test, mnb_predictions))
 
 # Load the pre-trained BERT tokenizer and model
