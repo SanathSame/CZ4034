@@ -3,6 +3,7 @@ import ScrollToTopOnMount from "../../template/ScrollToTopOnMount";
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+import reviews from '../../productReviews.js';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -19,6 +20,11 @@ function ProductDetail() {
   const img = sessionStorage.getItem('image_link');
   const price = sessionStorage.getItem('price');
   const desc = sessionStorage.getItem('desc');
+  const id = sessionStorage.getItem('product_id');
+
+  const productReviews = reviews.filter(review => review.product_id === 6857050914885);
+  console.log("This is product reviews", productReviews);
+  console.log("This is product ID", id);
 
 
   return (
@@ -70,7 +76,7 @@ function ProductDetail() {
                 </button>
               </div>
               <div className="col">
-                <button className="btn btn-dark py-2 w-100">Negative</button>
+                <button className="btn btn-outline-dark py-2 w-100">Negative</button>
               </div>
             </div>
 
@@ -99,13 +105,16 @@ function ProductDetail() {
           <p className="lead flex-shrink-0">
             <small>
               Reviews classified by the RoBERTa Model.
+
             </small>
-            <Grid container spacing={2}>
+            <Grid container spacing={10}>
               <Grid item xs={10}>
-                <Item>xs=10</Item>
+                {productReviews.map(review => (
+                  <Item key={review.FIELD1}>{review.review}</Item>)
+                )}
               </Grid>
               <Grid item xs={2}>
-                <Item>xs=2</Item>
+                <Item>Positive</Item>
               </Grid>
             </Grid>
           </p>

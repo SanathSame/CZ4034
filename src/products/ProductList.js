@@ -20,98 +20,52 @@ const skin_type = ["Combination", "Dry", "Normal", "Oily"];
 
 const skin_concern = ["Acne", "Anti-aging/Wrinkles", "Dryness/Hydration", "Oil Control/Pores", "Pigmentation", "Redness", "Sensitive"];
 
-function FilterMenuLeft() {
-  const [range, setRange] = React.useState([1, 95]);
 
-
-  function handleChanges(event, newValue) {
-    setRange(newValue);
-  }
-  return (
-    <ul className="list-group list-group-flush rounded">
-      <li className="list-group-item d-none d-lg-block">
-        <h5 className="mt-1 mb-2">Browse</h5>
-        <div className="d-flex flex-wrap my-2">
-          {categories.map((v, i) => {
-            return (
-              <Link
-                key={i}
-                to="/products"
-                className="btn btn-sm btn-outline-dark rounded-pill me-2 mb-2"
-                replace
-              >
-                {v}
-              </Link>
-            );
-          })}
-        </div>
-      </li>
-      <li className="list-group-item">
-        <h5 className="mt-1 mb-1">Skin Type</h5>
-        <div className="d-flex flex-column">
-          {skin_type.map((v, i) => {
-            return (
-              <div key={i} className="form-check">
-                <input className="form-check-input" type="checkbox" />
-                <label className="form-check-label" htmlFor="flexCheckDefault">
-                  {v}
-                </label>
-              </div>
-            );
-          })}
-        </div>
-      </li>
-      <li className="list-group-item">
-        <h5 className="mt-1 mb-1">Skin Concern</h5>
-        <div className="d-flex flex-column">
-          {skin_concern.map((v, i) => {
-            return (
-              <div key={i} className="form-check">
-                <input className="form-check-input" type="checkbox" />
-                <label className="form-check-label" htmlFor="flexCheckDefault">
-                  {v}
-                </label>
-              </div>
-            );
-          })}
-        </div>
-      </li>
-      <li className="list-group-item">
-        <h5 className="mt-1 mb-2">Price Range</h5>
-        <div className="d-grid d-block mb-3">
-          <Slider value={range} onChange={handleChanges} valueLabelDisplay="auto" />
-        </div>
-      </li>
-      <button className="btn btn-dark">Apply</button>
-    </ul>
-  );
-}
 
 
 function ProductList() {
   const [searchTerm, setsearchTerm] = useState('');
   const [products, setproducts] = useState([]);
+  const [selectedBrand, setSelectedBrand] = useState('');
 
   useEffect(() => {
-    handleSearch()
+    retrieveProducts()
   }, [])
   const handleChange = event => {
     setsearchTerm(event.target.value);
 
     console.log('value is:', event.target.value);
   };
-  async function handleSearch() {
+  async function retrieveProducts() {
     var requestOptions = {
       method: 'GET',
       redirect: 'follow'
     };
 
-    await fetch("http://localhost:8983/solr/info/select?indent=true&q.op=OR&q=*%3A*&useParams=", requestOptions)
+    await fetch("http://localhost:8983/solr/ir/select?indent=true&q.op=OR&q=*%3A*&useParams=", requestOptions)
       .then(response => response.json())
       .then(data => setproducts(data.response.docs))
       .catch(error => console.log('error', error));
   }
   console.log("Products value", products);
+
+  async function handleExactSearch() {
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+    const term = sessionStorage.getItem('Search');
+    console.log('Search term is',);
+
+    await fetch("http://localhost:8983/solr/ir/select?indent=true&q.op=OR&q=product_description%3A*" + term + "*%20OR%20product_name%3A*" + term + "*&useParams=", requestOptions)
+      .then(response => response.json())
+      .then(data => setproducts(data.response.docs))
+      .catch(error => console.log('error', error));
+  }
+  const handleSelectBrand = (event) => {
+    setSelectedBrand(event.target.value);
+    console.log('selected brand', selectedBrand);
+  };
 
 
   return (
@@ -192,19 +146,16 @@ function ProductList() {
                   className="form-select"
                   aria-label="Default select example"
                   defaultValue=""
+                  onChange={handleSelectBrand}
                 >
                   <option value="">All Brands</option>
-                  <option value="1">NEOGEN</option>
-                  <option value="2">COSRX</option>
-                  <option value="3">BENTON</option>
-                  <option value="4">BENTON</option>
-                  <option value="5">BENTON</option>
-                  <option value="6">BENTON</option>
-                  <option value="7">BENTON</option>
-                  <option value="8">BENTON</option>
-                  <option value="9">BENTON</option>
-                  <option value="10">BENTON</option>
-
+                  <option value="NEOGEN">NEOGEN</option>
+                  <option value="COSRX">COSRX</option>
+                  <option value="BENTON">BENTON</option>
+                  <option value="HANSKIN">HANSKIN</option>
+                  <option value="KLAIRS">KLAIRS</option>
+                  <option value="NATURIUM">NATURIUM</option>
+                  <option value="EXCLUSIVE">EXCLUSIVE</option>
                 </select>
               </div>
               <div className="col-lg-9 col-xl-5 offset-xl-4 d-flex flex-row">
@@ -214,21 +165,18 @@ function ProductList() {
                     type="text"
                     placeholder="Search products..."
                     aria-label="search input"
-                    value={searchTerm}
+                    value={sessionStorage.setItem('Search', searchTerm)}
                     onChange={handleChange}
                   />
-                  <button className="btn btn-outline-dark" onClick={handleSearch}>
+                  <button className="btn btn-outline-dark" onClick={handleExactSearch}>
+                    <span>EM</span>
+                    <FontAwesomeIcon icon={["fas", "search"]} />
+                  </button>
+                  <button className="btn btn-outline-dark" onClick={retrieveProducts}>
+                    <span>DVS</span>
                     <FontAwesomeIcon icon={["fas", "search"]} />
                   </button>
                 </div>
-                {/* <button
-                  className="btn btn-outline-dark ms-2 d-none d-lg-inline"
-                  onClick={changeViewType}
-                >
-                  <FontAwesomeIcon
-                    icon={["fas", viewType.grid ? "th-list" : "th-large"]}
-                  />
-                </button> */}
               </div>
             </div>
             <div
@@ -238,48 +186,131 @@ function ProductList() {
               }
             >
               {products.map(product => (
-                <Product key={product.product_ID} Img_link={product.Img_link} name={product.product_name} price={product.price} brand={product.product_brand} desc={product.product_description} />
+                <Product key={product.product_ID} id={product.product_ID} Img_link={product.Img_link} name={product.product_name} price={product.price} brand={product.product_brand} desc={product.product_description} />
               ))}
             </div>
             <div className="d-flex align-items-center mt-auto">
               <span className="text-muted small d-none d-md-inline">
                 Out of 553 possible products
               </span>
-              {/* <nav aria-label="Page navigation example" className="ms-auto">
-                <ul className="pagination my-0">
-                  <li className="page-item">
-                    <a className="page-link" href="!#">
-                      Previous
-                    </a>
-                  </li>
-                  <li className="page-item active">
-                    <a className="page-link" href="/products">
-                      1
-                    </a>
-                  </li>
-                  <li className="page-item">
-                    <a className="page-link" href="!#">
-                      2
-                    </a>
-                  </li>
-                  <li className="page-item">
-                    <a className="page-link" href="!#">
-                      3
-                    </a>
-                  </li>
-                  <li className="page-item">
-                    <a className="page-link" href="!#">
-                      Next
-                    </a>
-                  </li>
-                </ul>
-              </nav> */}
             </div>
           </div>
         </div>
       </div>
     </div>
   );
+
+  function FilterMenuLeft() {
+    const [range, setRange] = React.useState([1, 95]);
+    const [selectedValues, setSelectedValues] = React.useState([]);
+    const [skinValues, setSkinValues] = React.useState([]);
+    const [typeSelected, setTypeSelected] = useState('');
+
+    function handleChanges(event, newValue) {
+      setRange(newValue);
+    }
+
+    async function handleFilterApply() {
+      var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+
+      await fetch("http://localhost:8983/solr/ir/select?indent=true&q.op=AND&useParams=&q=product_brand%3ANATURIUM%0Aprice_num%3A%5B20%20TO%2030%5D%0Askin_type%3ACombination%0Aproduct_type%3AMoisturizer%0Askin_concern%3AAnti-Aging%2FWrinkles", requestOptions)
+        .then(response => response.json())
+        .then(data => setproducts(data.response.docs))
+        .catch(error => console.log('error', error));
+    }
+
+    const handleCheckBoxChange = (event) => {
+      const value = event.target.value;
+      console.log("Checkbox value", value);
+      if (event.target.checked) {
+        // Add the selected value to the array of selected values
+        setSelectedValues([...selectedValues, value]);
+      } else {
+        // Remove the unselected value from the array of selected values
+        setSelectedValues(selectedValues.filter((val) => val !== value));
+      }
+    };
+
+    const handleSkinConcernChange = (event) => {
+      const value = event.target.value;
+      console.log("Checkbox value", value);
+      if (event.target.checked) {
+        // Add the selected value to the array of selected values
+        setSkinValues([...skinValues, value]);
+      } else {
+        // Remove the unselected value from the array of selected values
+        setSkinValues(skinValues.filter((val) => val !== value));
+      }
+    };
+
+    const handleProductClick = (event) => {
+      setTypeSelected(event.target.value);
+      console.log('Product type is', typeSelected);
+    };
+    return (
+      <ul className="list-group list-group-flush rounded">
+        <li className="list-group-item d-none d-lg-block">
+          <h5 className="mt-1 mb-2">Browse</h5>
+          <div className="d-flex flex-wrap my-2">
+            {categories.map((v, i) => {
+              return (
+                <button
+                  key={i}
+                  className="btn btn-sm btn-outline-dark rounded-pill me-2 mb-2"
+                  value={v}
+                  onClick={handleProductClick}
+                >
+                  {v}
+                </button>
+              );
+            })}
+          </div>
+        </li>
+        <li className="list-group-item">
+          <h5 className="mt-1 mb-1">Skin Type</h5>
+          <div className="d-flex flex-column">
+            {skin_type.map((v, i) => {
+              return (
+                <div key={i} className="form-check">
+                  <input className="form-check-input" type="checkbox" onChange={handleCheckBoxChange} value={v} />
+                  <label className="form-check-label" htmlFor="flexCheckDefault">
+                    {v}
+                  </label>
+                </div>
+              );
+            })}
+            <p>Selected values: {selectedValues.join(', ')}</p>
+          </div>
+        </li>
+        <li className="list-group-item">
+          <h5 className="mt-1 mb-1">Skin Concern</h5>
+          <div className="d-flex flex-column">
+            {skin_concern.map((v, i) => {
+              return (
+                <div key={i} className="form-check">
+                  <input className="form-check-input" type="checkbox" value={v} onChange={handleSkinConcernChange} />
+                  <label className="form-check-label" htmlFor="flexCheckDefault">
+                    {v}
+                  </label>
+                </div>
+              );
+            })}
+            <p>Selected values: {skinValues.join(', ')}</p>
+          </div>
+        </li>
+        <li className="list-group-item">
+          <h5 className="mt-1 mb-2">Price Range</h5>
+          <div className="d-grid d-block mb-3">
+            <Slider value={range} onChange={handleChanges} valueLabelDisplay="auto" />
+          </div>
+        </li>
+        <button className="btn btn-dark" onClick={handleFilterApply}>Apply</button>
+      </ul>
+    );
+  }
 }
 
 export default ProductList;

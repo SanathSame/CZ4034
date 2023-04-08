@@ -1,5 +1,4 @@
 import { useHistory } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Product(props) {
   const history = useHistory();
@@ -12,7 +11,6 @@ function Product(props) {
     sessionStorage.setItem('image_link', props.Img_link);
     sessionStorage.setItem('brand', props.brand);
     sessionStorage.setItem('desc', props.desc);
-
 
     history.push('/products/review');
   }
@@ -33,7 +31,7 @@ function Product(props) {
           <p className="card-text text-center text-muted mb-0">{props.price}</p>
           <div className="d-grid d-block">
             <button className="btn btn-outline-dark mt-3" onClick={handleClick}>
-              <FontAwesomeIcon icon="fa-sharp fa-solid fa-star-sharp-half-stroke" /> View reviews
+              View reviews
             </button>
           </div>
         </div>
