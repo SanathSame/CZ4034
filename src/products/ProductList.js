@@ -55,9 +55,23 @@ function ProductList() {
       redirect: 'follow'
     };
     const term = sessionStorage.getItem('Search');
-    console.log('Search term is',);
+    if (term.length > 1)
+      console.log('Search term is',);
+    let query = '';
+    // split the search term into individual words
+    const words = term.split(' ');
+    // construct the query for each word
+    words.forEach((word, index) => {
+      query += `product_name:*${word}* OR product_description:*${word}*`;
+      if (index !== words.length - 1) {
+        query += ' OR ';
+      }
+    });
 
-    await fetch("http://localhost:8983/solr/ir/select?indent=true&q.op=OR&q=product_description%3A*" + term + "*%20OR%20product_name%3A*" + term + "*&useParams=", requestOptions)
+    // construct the final URL
+    const url = `http://localhost:8983/solr/ir/select?indent=true&q.op=OR&q=${encodeURIComponent(query)}&useParams=`;
+
+    await fetch(url, requestOptions)
       .then(response => response.json())
       .then(data => setproducts(data.response.docs))
       .catch(error => console.log('error', error));
@@ -211,15 +225,60 @@ function ProductList() {
     }
 
     async function handleFilterApply() {
+      let query = '';
+
+      // add the selected brand filter to the query
+      if (selectedBrand !== '')
+        query += `product_brand:${selectedBrand}`;
+
+      // add the selected skin type filters to the query
+      if (selectedValues.length > 0) {
+        query += '\n';
+        selectedValues.forEach((value, index) => {
+          query += `skin_type:${value}`;
+          if (index !== selectedValues.length - 1) {
+            query += ' OR ';
+          }
+        });
+      }
+      // add the selected skin concern filters to the query
+      if (skinValues.length > 0) {
+        query += '\n';
+        skinValues.forEach((value, index) => {
+          query += `skin_concern:${value}`;
+          if (index !== skinValues.length - 1) {
+            query += ' OR ';
+          }
+        });
+      }
+      // add the selected price range filter to the query
+      query += `\nprice_num:[${range[0]} TO ${range[1]}]`;
+      // add the selected product type filter to the query
+      if (typeSelected.length > 0) {
+        const typeWords = typeSelected.split(' ');
+        query += '\n';
+        typeWords.forEach((word, index) => {
+          query += `product_type:${word}`;
+          if (index !== typeWords.length - 1) {
+            query += ' OR ';
+          }
+        });
+      }
+      console.log('Query is', query);
+
+      // construct the final URL
+      const url = `http://localhost:8983/solr/ir/select?indent=true&q.op=AND&q=${encodeURIComponent(query)}&useParams=`;
       var requestOptions = {
         method: 'GET',
         redirect: 'follow'
       };
 
-      await fetch("http://localhost:8983/solr/ir/select?indent=true&q.op=AND&useParams=&q=product_brand%3ANATURIUM%0Aprice_num%3A%5B20%20TO%2030%5D%0Askin_type%3ACombination%0Aproduct_type%3AMoisturizer%0Askin_concern%3AAnti-Aging%2FWrinkles", requestOptions)
+      await fetch(url, requestOptions)
         .then(response => response.json())
         .then(data => setproducts(data.response.docs))
         .catch(error => console.log('error', error));
+
+
     }
 
     const handleCheckBoxChange = (event) => {

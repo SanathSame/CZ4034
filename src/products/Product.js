@@ -11,7 +11,6 @@ function Product(props) {
     sessionStorage.setItem('image_link', props.Img_link);
     sessionStorage.setItem('brand', props.brand);
     sessionStorage.setItem('desc', props.desc);
-
     history.push('/products/review');
   }
 

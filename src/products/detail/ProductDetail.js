@@ -4,6 +4,8 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import reviews from '../../productReviews.js';
+import RelatedProduct from "./RelatedProduct";
+
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -21,6 +23,7 @@ function ProductDetail() {
   const price = sessionStorage.getItem('price');
   const desc = sessionStorage.getItem('desc');
   const id = sessionStorage.getItem('product_id');
+  const brand = sessionStorage.getItem('brand');
 
   const productReviews = reviews.filter(review => review.product_id === 6857050914885);
   console.log("This is product reviews", productReviews);
@@ -84,11 +87,8 @@ function ProductDetail() {
             <hr />
             <dl className="row">
 
-              <dt className="col-sm-4">Category</dt>
-              <dd className="col-sm-8 mb-3"> Complexion Balm</dd>
-
               <dt className="col-sm-4">Brand</dt>
-              <dd className="col-sm-8 mb-3">Hermes</dd>
+              <dd className="col-sm-8 mb-3">{brand}</dd>
 
               <dt className="col-sm-4">Description</dt>
               <dd className="col-sm-8 mb-3">
@@ -100,7 +100,7 @@ function ProductDetail() {
       </div>
       <div className="row">
         <div className="col-md-12 mb-4">
-          <h4 className="mb-0">Description</h4>
+          <h4 className="mb-0">Reviews</h4>
           <hr />
           <p className="lead flex-shrink-0">
             <small>
@@ -120,7 +120,22 @@ function ProductDetail() {
           </p>
         </div>
       </div>
+
+      <div className="col-md-12 mb-4">
+        <hr />
+        <h4 className="text-muted my-4">Related products</h4>
+        <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+          {Array.from({ length: 4 }, (_, i) => {
+            return (
+              <RelatedProduct key={i} percentOff={i % 2 === 0 ? 15 : null} />
+            );
+          })}
+        </div>
+      </div>
     </div>
+
+
+
   );
 }
 

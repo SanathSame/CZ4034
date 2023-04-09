@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 function RelatedProduct(props) {
   const price = 10000;
   let percentOff;
-  let offPrice = `${price}Ks`;
 
   if (props.percentOff && props.percentOff > 0) {
     percentOff = (
@@ -14,12 +13,6 @@ function RelatedProduct(props) {
       >
         {props.percentOff}% OFF
       </div>
-    );
-
-    offPrice = (
-      <>
-        <del>{price}Ks</del> {price - (props.percentOff * price) / 100}Ks
-      </>
     );
   }
 
@@ -42,7 +35,7 @@ function RelatedProduct(props) {
           <h5 className="card-title text-center text-dark text-truncate">
             Nillkin iPhone X cover
           </h5>
-          <p className="card-text text-center text-muted">{offPrice}</p>
+          <p className="card-text text-center text-muted">{price}</p>
         </div>
       </div>
     </Link>
