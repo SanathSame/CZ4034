@@ -15,7 +15,7 @@ import tensorflow as tf
 import time
 
 # Load data
-data = pd.read_csv('balanced_data.csv')
+data = pd.read_csv('testRoBERTa.csv')
 
 reviews, targets = data['Review'], data['flair_labels']
 
