@@ -12,15 +12,12 @@ import matplotlib.pyplot as plt
 from joblib import dump
 from transformers import BertTokenizer, TFBertForSequenceClassification, RobertaTokenizer, TFRobertaForSequenceClassification
 import tensorflow as tf
+import time
 
 # Load data
-data = pd.read_csv('productReviews_soup.csv')
+data = pd.read_csv('balanced_data.csv')
 
-# # Split data into training and test sets
-# X_train, X_test, y_train, y_test = train_test_split(
-#     data['Review'], data['flair_labels'], random_state=42)
-reviews, targets = data['Review'], data['Target']
-
+reviews, targets = data['Review'], data['flair_labels']
 
 # Load the pre-trained RoBERTa tokenizer and model
 tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
@@ -32,20 +29,15 @@ roberta_model = TFRobertaForSequenceClassification.from_pretrained(
 # train_encodings = tokenizer(X_train.tolist(), truncation=True, padding=True)
 test_encodings = tokenizer(reviews.tolist(), truncation=True, padding=True)
 
-# Convert the tokenized data into a TensorFlow dataset
-# train_dataset = tf.data.Dataset.from_tensor_slices((
-#     dict(train_encodings),
-#     y_train
-# ))
 test_dataset = tf.data.Dataset.from_tensor_slices((
     dict(test_encodings),
     targets
 ))
-
+start = time.time()
 # Use the loaded model for prediction
 roberta_predictions = roberta_model.predict(
     test_dataset.batch(16)).logits.argmax(axis=-1)
-
+end = time.time()
 # Write the RoBERTa predictions to Column I of the test data
 data.loc[reviews.index, 'RoBERTa'] = roberta_predictions
 
@@ -59,3 +51,9 @@ print(classification_report(targets, roberta_predictions))
 
 # Save the updated data to a new file
 data.to_csv('RoBERTa.csv', index=False)
+total_minutes = (end - start)/60
+total_hours = total_minutes/60
+if (total_hours < 1):
+    print("Time taken: " + str(total_minutes) + " minutes")
+else:
+    print("Time taken: " + str(total_hours) + " hours")
