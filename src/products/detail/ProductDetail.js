@@ -90,18 +90,6 @@ function ProductDetail() {
           <div className="d-flex flex-column h-100">
             <h2 className="mb-1">{name}</h2>
             <h4 className="text-muted mb-4">{price}</h4>
-
-            <div className="row g-3 mb-4">
-              <div className="col">
-                <button className="btn btn-outline-dark py-2 w-100">
-                  Positive
-                </button>
-              </div>
-              <div className="col">
-                <button className="btn btn-outline-dark py-2 w-100">Negative</button>
-              </div>
-            </div>
-
             <h4 className="mb-0">Details</h4>
             <hr />
             <dl className="row">

@@ -201,11 +201,11 @@ function ProductList() {
                     onChange={handleChange}
                   />
                   <button className="btn btn-outline-dark" onClick={handleExactSearch}>
-                    <span>EM</span>
+                    <span>EM </span>
                     <FontAwesomeIcon icon={["fas", "search"]} />
                   </button>
                   <button className="btn btn-outline-dark" onClick={handleDenseSearch}>
-                    <span>DVS</span>
+                    <span>DVS </span>
                     <FontAwesomeIcon icon={["fas", "search"]} />
                   </button>
                 </div>
@@ -359,7 +359,6 @@ function ProductList() {
                 </div>
               );
             })}
-            <p>Selected values: {selectedValues.join(', ')}</p>
           </div>
         </li>
         <li className="list-group-item">
@@ -375,7 +374,6 @@ function ProductList() {
                 </div>
               );
             })}
-            <p>Selected values: {skinValues.join(', ')}</p>
           </div>
         </li>
         <li className="list-group-item">
