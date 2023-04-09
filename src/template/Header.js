@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Header() {
 
-  const [openedDrawer, setOpenedDrawer] = useState(false)
+  const [openedDrawer, setOpenedDrawer] = useState(false);
 
   function toggleDrawer() {
     setOpenedDrawer(!openedDrawer);
@@ -36,32 +36,7 @@ function Header() {
             </ul>
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item dropdown">
-                <a
-                  href="!#"
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  id="userDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <FontAwesomeIcon icon={["fas", "user-alt"]} />
-                </a>
-                <ul
-                  className="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="userDropdown"
-                >
-                  <li>
-                    <Link to="/" className="dropdown-item" onClick={changeNav}>
-                      Login
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="dropdown-item" onClick={changeNav}>
-                      Sign Up
-                    </Link>
-                  </li>
-                </ul>
+                <FontAwesomeIcon icon={["fas", "user-alt"]} />
               </li>
             </ul>
           </div>

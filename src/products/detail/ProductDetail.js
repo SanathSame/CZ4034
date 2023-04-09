@@ -3,10 +3,11 @@ import ScrollToTopOnMount from "../../template/ScrollToTopOnMount";
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
-import reviews from '../../productReviews.js';
-import RelatedProduct from "./RelatedProduct";
-
-
+import React from "react";
+import similar_products from "../../similarProducts.js";
+import { useEffect, useState } from "react";
+import SimilarProduct from "../SimilarProduct";
+import product_reviews from "../../productReviews";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -15,19 +16,42 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
+
 function ProductDetail() {
+  useEffect(() => {
+    const name = sessionStorage.getItem('product_name');
+    console.log("Name", name);
+    findSimilarProducts(name);
+  }, []);
 
-
+  const [similarProducts, setSimilarProducts] = useState([]);
   const name = sessionStorage.getItem('product_name');
   const img = sessionStorage.getItem('image_link');
   const price = sessionStorage.getItem('price');
   const desc = sessionStorage.getItem('desc');
-  const id = sessionStorage.getItem('product_id');
+  const id = parseInt(sessionStorage.getItem('product_id'));
   const brand = sessionStorage.getItem('brand');
 
-  const productReviews = reviews.filter(review => review.product_id === 6857050914885);
-  console.log("This is product reviews", productReviews);
-  console.log("This is product ID", id);
+
+  const productReviews = product_reviews.filter(review => review.Product_ID === id && review.Review !== '');
+  console.log("This is product product_reviews", productReviews);
+  console.log("This is product id", name);
+
+  function findSimilarProducts(productName) {
+    const product = similar_products.find((p) => p.FIELD1 === productName);
+    if (!product) {
+      return []; // product not found
+    }
+    for (const [name, score] of Object.entries(product)) {
+      if (name === "FIELD1" || parseFloat(score) >= 0) {
+        continue; // ignore non-product fields and non-similar products
+      }
+      similarProducts.push({ name, score: parseFloat(score) });
+    }
+    similarProducts.sort((a, b) => a.score - b.score);
+    console.log("Similar products", similarProducts); // sort by ascending similarity score
+    setSimilarProducts(similarProducts.slice(1, 5)); // return top 4 similar products
+  }
 
 
   return (
@@ -39,11 +63,6 @@ function ProductDetail() {
             <Link className="text-decoration-none link-secondary" to="/products">
               All Products
             </Link>
-          </li>
-          <li className="breadcrumb-item">
-            <a className="text-decoration-none link-secondary" href="!#">
-
-            </a>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             {name}
@@ -92,7 +111,7 @@ function ProductDetail() {
 
               <dt className="col-sm-4">Description</dt>
               <dd className="col-sm-8 mb-3">
-                <p>{desc}</p>
+                <span>{desc.slice(0, 500)}</span>
               </dd>
             </dl>
           </div>
@@ -102,40 +121,37 @@ function ProductDetail() {
         <div className="col-md-12 mb-4">
           <h4 className="mb-0">Reviews</h4>
           <hr />
-          <p className="lead flex-shrink-0">
+          <div className="lead flex-shrink-0">
             <small>
               Reviews classified by the RoBERTa Model.
-
             </small>
             <Grid container spacing={10}>
-              <Grid item xs={10}>
-                {productReviews.map(review => (
-                  <Item key={review.FIELD1}>{review.review}</Item>)
-                )}
-              </Grid>
-              <Grid item xs={2}>
-                <Item>Positive</Item>
-              </Grid>
+              {productReviews.slice(0, 20).map((review, index) => (
+                <React.Fragment key={index + 1}>
+                  <Grid item xs={10}>
+                    <Item>{review.Review}</Item>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Item style={{ color: 'white', backgroundColor: review.RoBERTa ? 'green' : 'red' }}>{review.RoBERTa === 1 ? 'Positive' : 'Negative'}</Item>
+                  </Grid>
+                </React.Fragment>
+              ))}
             </Grid>
-          </p>
+          </div>
         </div>
       </div>
-
-      <div className="col-md-12 mb-4">
-        <hr />
-        <h4 className="text-muted my-4">Related products</h4>
-        <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
-          {Array.from({ length: 4 }, (_, i) => {
-            return (
-              <RelatedProduct key={i} percentOff={i % 2 === 0 ? 15 : null} />
-            );
-          })}
+      <div className="row">
+        <div className="col-md-12 mb-4">
+          <hr />
+          <h4 className="text-muted my-4">Related products</h4>
+          <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+            {similarProducts.map((p, index) => (
+              <SimilarProduct key={index + 1} name={p.name} price={p.score} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
-
-
-
   );
 }
 

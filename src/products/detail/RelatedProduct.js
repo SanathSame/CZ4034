@@ -2,20 +2,6 @@ import Image from "../../nillkin-case-1.jpg";
 import { Link } from "react-router-dom";
 
 function RelatedProduct(props) {
-  const price = 10000;
-  let percentOff;
-
-  if (props.percentOff && props.percentOff > 0) {
-    percentOff = (
-      <div
-        className="badge bg-dim py-2 text-white position-absolute"
-        style={{ top: "0.5rem", right: "0.5rem" }}
-      >
-        {props.percentOff}% OFF
-      </div>
-    );
-  }
-
   return (
     <Link
       to="/products/1"
@@ -24,7 +10,7 @@ function RelatedProduct(props) {
       replace
     >
       <div className="card shadow-sm">
-        {percentOff}
+
         <img
           className="card-img-top bg-dark cover"
           height="200"
@@ -33,9 +19,9 @@ function RelatedProduct(props) {
         />
         <div className="card-body">
           <h5 className="card-title text-center text-dark text-truncate">
-            Nillkin iPhone X cover
+            {props.name}
           </h5>
-          <p className="card-text text-center text-muted">{price}</p>
+          <p className="card-text text-center text-muted">{props.price}</p>
         </div>
       </div>
     </Link>
